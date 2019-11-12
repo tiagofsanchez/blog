@@ -56,12 +56,37 @@ export default {
       boxShadow: `1px 2px 10px rgba(0, 0, 0, 0.5)`
     },
     code: {
-      fontFamily: `monospace`
+      fontFamily: `monospace`,
+      fontWeight: `body`,
+      lineHeight: `body`,
+      letterSpacing: `body`
     },
     inlineCode: {
       borderRadius: `0.3em`,
       bg: `muted`,
-      p: `0.3em`
+      p: `0.3em`,
+      fontSize: `14px`
+    },
+    table: {
+      width: "100%",
+      borderCollapse: "separate",
+      borderSpacing: 0
+    },
+    th: {
+      textAlign: "left",
+      py: 2,
+      borderBottomStyle: "solid"
+    },
+    td: {
+      textAlign: "left",
+      py: 2,
+      borderBottom: "1px solid",
+      borderColor: "muted"
+    },
+    img: {
+      maxWidth: "100%",
+      height: "auto",
+      boxShadow: `1px 2px 10px rgba(0, 0, 0, 0.5)`
     },
     // from typography overrideThemeStyles
     h1: {
@@ -69,7 +94,7 @@ export default {
       fontFamily: "heading",
       fontWeight: "heading",
       color: "primary",
-      mt: 4,
+      mt: 5,
       mb: 4
     },
     a: {

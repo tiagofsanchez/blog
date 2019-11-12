@@ -31,7 +31,7 @@ class PostListing extends React.Component {
         postList.map(post => (
           <Fragment key={post.title}>
             <Styled>
-              <Styled.h2 sx={{ mb: `-1px` }}>
+              <Styled.h2 sx={{ mb: `5px` }}>
                 <Styled.a
                   as={Link}
                   to={post.path}
