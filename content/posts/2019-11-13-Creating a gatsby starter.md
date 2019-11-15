@@ -29,9 +29,13 @@ On a more positive note I did all this as a mean to publish my first contributio
 
 # Welcoming gatsby-tfs-starter
 
-My starter styling was in a way inspired by Dan Abramov [blog](https://overreacted.io/) and to build something like that, with the functionalities that I had envisioned, I had to leverage a already existing starter, the [gatsby-advanced-starter](https://www.gatsbyjs.org/starters/Vagr9K/gatsby-advanced-starter/). 
+My starter styling was in a way inspired by Dan Abramov [blog](https://overreacted.io/) and to build something like that, with the functionalities that I had envisioned, I had to leverage a already existing starter, the [gatsby-advanced-starter](https://www.gatsbyjs.org/starters/Vagr9K/gatsby-advanced-starter/), as I didn't want to start from scratch.
 
-I had to make a couple of changes on that starter as one of the things that I wanted to see there was MDX implemented - now you can have that! After making that change I used `theme-ui` to give it a more opinionated styling and tweaked a couple of things more. 
+I had to make a couple of changes on that starter as one of the things that I wanted to see there was MDX implemented - now you can have that on [this starter](https://github.com/tiagofsanchez/gatsby-tfs-starter)! After making that change I used `theme-ui` to give it a more opinionated styling and tweaked a couple of things more. 
+
+That is that! I finally published my first Gatsby starter and my first open sourced project. I hope that you used! 
+
+See you around! 
 
 
 
