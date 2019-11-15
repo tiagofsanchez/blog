@@ -20,7 +20,7 @@ export default {
     container: 710
   },
   fonts: {
-    body: "system-ui, sans-serif",
+    body: "PT Sans Narrow,sans-serif",
     monospace: '"Roboto Mono", Menlo, monospace'
   },
   lineHeights: {
@@ -91,8 +91,6 @@ export default {
     // from typography overrideThemeStyles
     h1: {
       fontSize: 32,
-      fontFamily: "heading",
-      fontWeight: "heading",
       color: "primary",
       mt: 5,
       mb: 4

@@ -23,7 +23,7 @@ so that I can provide a better experience for anyone reading it.
 
 The theme looks great, it is simple, and it works like a dream.
 
-![my blog before the changes](https://github.com/tiagofsanchez/personalBlog/blob/master/content/posts/2019-08-23-blogSeries-shadowing-a-gatsby-theme/BeforeChanges.gif?raw=true)
+![my blog before the changes](./images/Shadowing-BeforeChanges.gif)
 
 Really love the way I can have a toggle that lets users change from into dark and day theme at the UI level. That is just fantastic.
 
