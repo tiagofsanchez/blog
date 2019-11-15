@@ -23,7 +23,7 @@ so that I can provide a better experience for anyone reading it.
 
 The theme looks great, it is simple, and it works like a dream.
 
-![my blog before the changes](./images/Shadowing-BeforeChanges.gif)
+![my blog before the changes](../images/Shadowing-BeforeChanges.gif)
 
 Really love the way I can have a toggle that lets users change from into dark and day theme at the UI level. That is just fantastic.
 
