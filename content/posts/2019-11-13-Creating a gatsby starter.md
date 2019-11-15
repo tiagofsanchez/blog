@@ -33,6 +33,12 @@ My starter styling was in a way inspired by Dan Abramov [blog](https://overreact
 
 I had to make a couple of changes on that starter as one of the things that I wanted to see there was MDX implemented - now you can have that on [this starter](https://github.com/tiagofsanchez/gatsby-tfs-starter)! After making that change I used `theme-ui` to give it a more opinionated styling and tweaked a couple of things more. 
 
+For me the most challenging piece was actually to be able to integrate MDX into the data schema. For that I needed to make a couple of changes on the following files: 
+
+- gatsby-node.js, both the graphql query as well as the creation of the mdx and allMdx nodes accordingly; 
+- all the template components (category.js, post.js and tag.js) needed to be changed to pull in MDX created data; 
+- both blog.js and index.js as I am rendering the MDX data on those pages.
+
 That is that! I finally published my first Gatsby starter and my first open sourced project. I hope that you used! 
 
 See you around! 
