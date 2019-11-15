@@ -2,7 +2,7 @@
 title: "And I decided to start to code"
 cover: ""
 date: 2019-08-21
-category: "👨‍💻 Code"
+category: "🔮 Code"
 tags:
   - react
   - front-end

@@ -2,7 +2,7 @@
 title: "React Animations"
 cover: ""
 date: 2019-09-06
-category: "👨‍💻 Code"
+category: "🔮 Code"
 tags:
   - react
   - animations

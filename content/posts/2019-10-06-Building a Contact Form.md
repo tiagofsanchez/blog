@@ -2,7 +2,7 @@
 title: "Building a contact from with Airtable"
 cover: ""
 date: 2019-10-06
-category: "👨‍💻 Code"
+category: "🔮 Code"
 tags:
   - blog
   - gatsby

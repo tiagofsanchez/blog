@@ -2,7 +2,7 @@
 title: "Creating my first gatsby starter"
 cover: ""
 date: 2019-11-13
-category: "👨‍💻 Code"
+category: "🔮 Code"
 tags:
   - blog
   - gatsby
@@ -13,7 +13,7 @@ publish: "yes"
 
 I have started this blog a couple of months ago and venture myself into the Gatsby ecosystem. At the time I was fascinated with the concept of `gatsby theme`, and still am, however I have decided to go back to using a `gatsby starter`.
 
-Apparently it is time to give 1 step back in order to give 2 forwards.
+Apparently it was time to give 1 step back in order to give 2 forwards.
 
 # Using a gatsby starter instead
 
@@ -23,10 +23,16 @@ To start with I have to admit that I was a little bit frustrated with the fact t
 
 A `gatsby theme` is an excellent abstraction and I totally see the value of it. Unlike a `starter` you can have more control over anything that you build that is leveraging a `theme` (this is specially true if you own that `theme` and want to maintain consistency across different projects that use that same `theme`). If, let's say, you want to build a blog that has the same look and feel across different projects for your organization, it will be easy to maintain that with a `theme`. A simple change in your `theme` and boom 💥, it changes everything across your different projects. On the other hand, if you use a `starter` it is the same way as forking a repo, it will be a different code base from that moment onwards and that means that it will be painful to maintain.
 
-The other challenge that I had was, less of a challenge now, more of a mistake at the time, but I was not able to properly create a `navMenu` that behaved the way I would wanted to. The intent was to create a header `navMenu` that had not bottom shade when the blog loaded, but that displayed that bottom shadow, once the user scrolled down. I implement that using a class component with state, leveraging the component state to change my UI. For some reason I was not able to do that on `gatsby-theme-blog/components/navMenu.js`... well, I do think this was my mistake and nothing else. What's more, I reckon you can definitely do this with `Hooks` is the problem was not being able to transform `navMenu` into a class component with state.
+The other challenge that I had was, less of a challenge now, more of a mistake at the time, but I was not able to properly create a `navMenu` that behaved the way I would wanted to. The intent was to create a header `navMenu` that had not bottom shade when the blog loaded, but that displayed that bottom shadow, once the user scrolled down. I implement that using a class component with state, leveraging the component state to change my UI. For some reason I was not able to do that on `gatsby-theme-blog/components/navMenu.js`... well, I do think this was my mistake and nothing else. What's more, I reckon you can definitely do this with `hooks` if the problem was not being able to transform `navMenu` into a class component with state.
 
 On a more positive note I did all this as a mean to publish my first contribution to the gatsby community and my first [open sourced project](https://github.com/tiagofsanchez/gatsby-tfs-starter) that anyone can actually use... Hurray! Give it a spin and let me know what you think.
 
 # Welcoming gatsby-tfs-starter
 
-Inspired by
+My starter styling was in a way inspired by Dan Abramov [blog](https://overreacted.io/) and to build something like that, with the functionalities that I had envisioned, I had to leverage a already existing starter, the [gatsby-advanced-starter](https://www.gatsbyjs.org/starters/Vagr9K/gatsby-advanced-starter/). 
+
+I had to make a couple of changes on that starter as one of the things that I wanted to see there was MDX implemented - now you can have that! After making that change I used `theme-ui` to give it a more opinionated styling and tweaked a couple of things more. 
+
+
+
+

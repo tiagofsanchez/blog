@@ -2,7 +2,7 @@
 title: "Creating a tag page with Gatsby"
 cover: ""
 date: 2019-09-12
-category: "👨‍💻 Code"
+category: "🔮 Code"
 tags:
   - blog
   - gatsby
