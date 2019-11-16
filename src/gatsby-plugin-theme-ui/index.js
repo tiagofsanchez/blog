@@ -29,10 +29,10 @@ export default {
   },
   fontWeights: {
     body: 400,
-    heading: 800,
+    heading: 1000,
     bold: 700
   },
-  fontSizes: [14, 16, 18, 20, 24, 32, 48, 64, 72, 96],
+  fontSizes: [24, 32, 48, 64, 72, 96],
   letterSpacing: {
     body: "normal",
     caps: "0.2em"
@@ -44,12 +44,9 @@ export default {
     },
     pre: {
       variant: `prism`,
-      fontFamily: `monospace`,
-      fontSize: `14px`,
+      bg: `prism.background`,
       hyphens: `none`,
       marginBottom: 3,
-      color: darkPink,
-      bg: `prism.background`,
       overflow: `auto`,
       borderRadius: 5,
       p: 3,
@@ -65,7 +62,7 @@ export default {
       borderRadius: `0.3em`,
       bg: `muted`,
       p: `0.3em`,
-      fontSize: `14px`
+      fontSize: `body`
     },
     table: {
       width: "100%",
@@ -86,7 +83,10 @@ export default {
     img: {
       maxWidth: "100%",
       height: "auto",
-      boxShadow: `1px 2px 10px rgba(0, 0, 0, 0.5)`
+      boxShadow: `1px 2px 10px rgba(0, 0, 0, 0.5)`,
+      textAlign: `center`,
+      display: `block`,
+      margin: `auto`
     },
     // from typography overrideThemeStyles
     h1: {
@@ -99,6 +99,7 @@ export default {
       color: `primary`
     },
     p: {
+      fontSize: `body`,
       fontWeight: `body`,
       lineHeight: `body`,
       letterSpacing: `body`
