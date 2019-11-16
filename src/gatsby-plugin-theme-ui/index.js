@@ -32,7 +32,7 @@ export default {
     heading: 1000,
     bold: 700
   },
-  fontSizes: [24, 32, 48, 64, 72, 96],
+  fontSizes: [14, 16, 20, 24, 32, 48, 64, 72, 96],
   letterSpacing: {
     body: "normal",
     caps: "0.2em"
@@ -54,31 +54,39 @@ export default {
     },
     code: {
       fontFamily: `monospace`,
+      fontSize: 14,
       fontWeight: `body`,
       lineHeight: `body`,
       letterSpacing: `body`
     },
     inlineCode: {
+      fontFamily: `body`,
       borderRadius: `0.3em`,
       bg: `muted`,
-      p: `0.3em`,
-      fontSize: `body`
+      p: `0.1em`,
+      fontSize: `16`
     },
     table: {
       width: "100%",
       borderCollapse: "separate",
-      borderSpacing: 0
+      borderSpacing: 0,
+      fontFamily: `body`,
+      fontSize: 16
     },
     th: {
       textAlign: "left",
       py: 2,
-      borderBottomStyle: "solid"
+      borderBottomStyle: "solid",
+      fontFamily: `body`,
+      fontSize: 16
     },
     td: {
       textAlign: "left",
       py: 2,
       borderBottom: "1px solid",
-      borderColor: "muted"
+      borderColor: "muted",
+      fontFamily: `body`,
+      fontSize: 16
     },
     img: {
       maxWidth: "100%",
@@ -92,20 +100,20 @@ export default {
     h1: {
       fontSize: 32,
       color: "primary",
-      mt: 5,
-      mb: 4
+      mt: 2,
+      mb: 2
     },
     a: {
       color: `primary`
     },
     p: {
-      fontSize: `body`,
+      fontSize: 20,
       fontWeight: `body`,
       lineHeight: `body`,
       letterSpacing: `body`
     },
     li: {
-      fontSize: `body`,
+      fontSize: 20,
       fontWeight: `body`,
       lineHeight: `body`,
       letterSpacing: `body`

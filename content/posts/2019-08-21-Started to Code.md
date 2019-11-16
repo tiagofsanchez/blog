@@ -70,7 +70,7 @@ Throughout this learning journey I have done a lot of projects and invested time
 
 A web App that search for restaurants in a certain any city you would like to 🍲
 
-![screenshot](../images/avatar.png)
+![screenshot](../images/StartedToCode-ravenous.png)
 
 | Details   |                               Links                                |
 | --------- | :----------------------------------------------------------------: |
@@ -116,7 +116,7 @@ handleLocationChange (event) {
 
 Creating a Spotify playlist 🎧 selector
 
-![screenshot](https://github.com/tiagofsanchez/TiagoFSanchez/blob/develop/content/posts/2019-08-21-startedToCode/jammming.png?raw=true)
+![screenshot](../images/StartedToCode-jammming.png)
 
 | Details   |                                     Links                                      |
 | --------- | :----------------------------------------------------------------------------: |
@@ -176,7 +176,7 @@ renderAction() {
 
 This was my first personal project. A web app to track the food intake of your baby 🥜
 
-![screenshot](https://github.com/tiagofsanchez/TiagoFSanchez/blob/develop/content/posts/2019-08-21-startedToCode/babyPenaut.png?raw=true)
+![screenshot](../images/StartedToCode-babyPenaut.png)
 
 | Details   |                             Links                             |
 | --------- | :-----------------------------------------------------------: |
@@ -260,7 +260,7 @@ For the most experience developers those things could seem super simple, and I p
 
 A Web app where a user builds and purchases a Burger. A udemy project that I haven't finished 😥, so I def will need to get back at it as soon as possible!
 
-![screenshot](https://github.com/tiagofsanchez/TiagoFSanchez/blob/develop/content/posts/2019-08-21-startedToCode/burgerBuilder.png?raw=true)
+![screenshot](../images/StartedToCode-burgerBuilder.png)
 
 | Details   |                               Links                                |
 | --------- | :----------------------------------------------------------------: |

@@ -173,7 +173,7 @@ const newData = dataToArray.map((data, index) => {
 
 And that was exactly what I wanted to have.
 
-![my blog after the changes](https://github.com/tiagofsanchez/personalBlog/blob/master/content/posts/2019-08-23-blogSeries-shadowing-a-gatsby-theme/AfterChanges.gif?raw=true)
+![my blog after the changes](../images/Shadowing-BeforeChanges.gif)
 
 As you can see I did made a couple of changes that are not described in here, but I think you get the gist.
 
