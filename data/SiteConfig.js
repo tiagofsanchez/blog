@@ -1,12 +1,11 @@
 const config = {
-  siteTitle: "gatsby tfs starter", // Site title.
-  siteTitleShort: "tfs starter", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "gatsbyJS tfs starter", // Alternative site title for SEO.
+  siteTitle: "tiagofsanchez", // Site title.
+  siteTitleShort: "tfs stuff", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitleAlt: "tiagofsanchez stuff", // Alternative site title for SEO.
   siteLogo: "", // Logo used for SEO and manifest.
   siteUrl: "https://gatsby-tfs-starter.netlify.com/", // Domain of your website without pathPrefix.
-  pathPrefix: "/gatsby-tfs-starter", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-  siteDescription:
-    "A GatsbyJS stater with Advanced design in mind and with theme-ui", // Website description used for RSS feeds/meta description tag.
+  pathPrefix: "/tfs", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
+  siteDescription: "A blog about react, innovation, travel and other stuff", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "1825356251115265", // FB Application ID for using app insights
   googleAnalyticsID: "UA-47311644-5", // GA tracking ID.
@@ -23,7 +22,7 @@ const config = {
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   avatar: {
     description:
-      "I am learning to code ReactJS (from scratch) and I have built this starter to learn how Gatsby works and to build by blog!",
+      "I am learning to code ReactJS (from scratch) and I have built this starter to learn how Gatsby works and to build my blog!",
     photo: "https://avatars1.githubusercontent.com/u/11288873?s=400&v=4"
   },
   userLinks: [
@@ -50,7 +49,7 @@ const config = {
       url: "/blog"
     }
   ],
-  copyright: "Copyright © 2019. Advanced User", // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © 2019. tfs", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0" // Used for setting manifest background color.
 };
