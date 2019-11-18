@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import AvatarLinks from "../components/Avatar/AvatarLinks";
+import us from "../../content/images/us.png";
 
 /** @jsx jsx */
 import { Styled, jsx } from "theme-ui";
 
 class About extends Component {
   render() {
+    const { data } = this.props;
+    console.log(data);
     return (
       <>
         <div
@@ -35,8 +38,12 @@ class About extends Component {
         </Styled.p>
         <Styled.p>Hope you enjoy!</Styled.p>
         <Styled.h1>Us</Styled.h1>
-
-        <Styled.p />
+        <Styled.p>
+          Briefly describing me wouldn't be complete without uploading a picture
+          of the four of us 😎! For some reason I couldn't find a nice picture
+          with the four of us, go figure!
+        </Styled.p>
+        <Styled.img src={us} alt="pictures" />
       </>
     );
   }
