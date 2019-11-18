@@ -15,7 +15,7 @@ The purpose of this is to share learnings that hopefully will help anyone that i
 
 > A big caveat, this is not, neither intends to be a tutorial, rather a cheat sheet that will enable anyone to solve for similar problems.
 
-## Using Gatsby `gatsby-theme-blog`
+# Using Gatsby `gatsby-theme-blog`
 
 Still unclear with the reason why I am using `gatsby-theme-blog` over `gatsby-starter-blog`, but hey, I have chosen that path, probably because of
 [this post](https://www.gatsbyjs.org/blog/2019-01-31-why-themes/) from Kyle, and now I am trying to make a couple of changes to the `gatsby-theme-blog` itself
@@ -23,7 +23,7 @@ so that I can provide a better experience for anyone reading it.
 
 The theme looks great, it is simple, and it works like a dream.
 
-![my blog before the changes](./Shadowing-BeforeChanges.gif)
+![my blog before the changes](https://github.com/tiagofsanchez/blog/blob/master/content/images/Shadowing-AfterChanges.gif?raw=true)
 
 Really love the way I can have a toggle that lets users change from into dark and day theme at the UI level. That is just fantastic.
 
@@ -38,7 +38,7 @@ However there are a couple of things are missing, such as:
 The above is more like a wish list that I will be working through as I will try to build that into my blog as I learn to code.
 So let's start with (1) and see how can we tackle this topic.
 
-### Enter Shadowing
+## Enter Shadowing
 
 To change something in `gatsby-theme-blog`, you will need to shadow the component of your theme and in my specific case, I will need to shadow `posts.js` file so that you can get the information that you want to in a way that you pass it to you DOM.
 
@@ -124,7 +124,7 @@ const data = useStaticQuery(
 
 I have use `sort:` here to make sure that both `posts` and our new variable `data` have the same order. So now that I have 2 data sets, (1) `posts` with all the details of the posts and (2) `data` with **timeToRead**, how can I join them in a way that I could `.map()` them into my JSX?
 
-### Merging data sets in JavaScript
+## Merging data sets in JavaScript
 
 First of all, before thinking about merging any data set, it is good to understand that we will have tow types of that sets, an **ARRAY []** and a **OBJECT {}**.
 
@@ -173,7 +173,7 @@ const newData = dataToArray.map((data, index) => {
 
 And that was exactly what I wanted to have.
 
-![my blog after the changes](../images/Shadowing-BeforeChanges.gif)
+![my blog after the changes](https://github.com/tiagofsanchez/blog/blob/master/content/images/Shadowing-BeforeChanges.gif?raw=true)
 
 As you can see I did made a couple of changes that are not described in here, but I think you get the gist.
 
@@ -181,7 +181,7 @@ What was also interesting, while I was going through this exercise, was to refle
 
 Another afterthought on the back of this are a couple of entries on the wishlist to improve the blog
 
-### The blog wishlist
+## The blog wishlist
 
 1. ✅ the **timeToRead** detail information is not there;
 2. any **tags** or blog posts **categories** (do they even exist?) don't exist;

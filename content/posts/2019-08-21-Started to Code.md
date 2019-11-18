@@ -20,13 +20,13 @@ With this post, I hope to be able to help folks that are in the same situation t
 
 Make no assumptions, independent of the technologies that you aspire to learn, you will need to put a lot of hours into it and practice. I reckon that learning to code is similar to learning a new language, you can know all the theory, but if you don't really practice it, you will loose it.
 
-## Why I ventured into coding
+# Why I ventured into coding
 
 Simply put, I wanted to be able to build stuff. To be autonomous. To create with my own hands, using tools that are out there and are, or rather, should be easy to work with. Going from a concept or idea, through designing and building it was something that always fascinated me.
 
 For a couple of years I have been drawn into this topic: **How does one becomes a developer?** or probably better and simpler, **How does one learn how to code?**.
 
-## Were to start
+# Were to start
 
 For me one thing was clear given that I wanted to see things being built. That was the idea of starting with front-end development. As I mentioned before I was eager to see things being built and done and as such thought (and still think) that back-end will be challenging for me as I really like to see the output of all the work that I do.
 
@@ -37,7 +37,7 @@ Despite all of the noise, if you really want to learn how to code, you need to c
 
 For me, as I mentioned, front-end was the way to go, but it is impossible to shy away from back-end development as you will need at one point to store your data somewhere.
 
-### Some of the resources that I used
+## Some of the resources that I used
 
 Anyone starting with front-end development should have a good grasp of:
 
@@ -60,13 +60,13 @@ Other recourses that I couldn't live without:
 - [GitHub](https://github.com/);
 - [MDN web docs](https://developer.mozilla.org/en-US/)
 
-## Experiments
+# Experiments
 
 It is all about trying new things and experimenting with the tech
 
 Throughout this learning journey I have done a lot of projects and invested time trying to better understand the react ecosystem. Everything that I have been doing is with `ReactJS`.
 
-### - Ravenous
+## Ravenous
 
 A web App that search for restaurants in a certain any city you would like to 🍲
 
@@ -112,7 +112,7 @@ handleLocationChange (event) {
 </div>
 ```
 
-### - Jamming
+## Jamming
 
 Creating a Spotify playlist 🎧 selector
 
@@ -172,7 +172,7 @@ renderAction() {
 //note that isRemoval prop is `false` for the trackList component in the SearchResults abd `true` in the PlayList component
 ```
 
-### - BabyPeanut
+## BabyPeanut
 
 This was my first personal project. A web app to track the food intake of your baby 🥜
 
@@ -256,7 +256,7 @@ return (
 
 For the most experience developers those things could seem super simple, and I probably would agree that they are, but for me, at that time, that was an amazing achievement.
 
-### - BurgerBuilder
+## BurgerBuilder
 
 A Web app where a user builds and purchases a Burger. A udemy project that I haven't finished 😥, so I def will need to get back at it as soon as possible!
 
@@ -273,7 +273,7 @@ To be completely honest, I feel that I need to do a proper post with just this p
 
 Now I just need to find the time to (1) finalize the course and (2) summarize my learnings so that I reflect on them.
 
-## So what is next
+# So what is next
 
 As I reflect on what I have learn till now, I realize how much I don't know and how much I still need to learn. For me the ultimate goal is to create, at least, 1 project, 1 PWA that will help people with whatever they are trying to do in a relevant way. It could be at work, with my "pet" project or something to do with BabyPenaut Web App or even better, something to do with surfing 🏄!
 

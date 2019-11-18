@@ -42,15 +42,15 @@ This was the end result:
 
 Let's check out how this was done.
 
-## Working through the markdown files
+# Working through the markdown files
 
 I will assume that you are familiar with gatsby, so will go through this first step rather quickly. Here, there are two things that you have to bear in mind; (1) you need to enable gatsby to go through your files and read them so that you can have access to their data and (2) you need to enable gatsby to understand what he is looking for, and in this particular case that will be your Markdown files.
 
-### - Let's start with (1)
+## Let's start with (1)
 
 Here you will have to use the `gatsby-source-filesystem` plugin, install it using `npm install --save gatsby-source-filesystem` and add it in your `gatsby-config.js` file (we will do this after going through (2)).
 
-### - (2) Letting gatsby know what he should be looking for
+## (2) Letting gatsby know what he should be looking for
 
 For that you will need to use `gatsby-transformer-remark` plugin, and in the exact same way that you install your first plugin: `npm install --save gatsby-transformer-remark` and add it in your `gatsby-config.js`.
 
@@ -76,7 +76,7 @@ After doing all this, you will be able to go to your `index.js` file, that will 
 
 > If you want to go through this in more detail, I would suggest the following gatsby [documentation](https://www.gatsbyjs.org/docs/adding-markdown-pages/).
 
-## Building the slugs automatically
+# Building the slugs automatically
 
 If you tried to `.map()` your posts in your `index.js` you will see that you can't click on them without encountering the 404 development page, hence we will need to create the slugs for the posts and make sure that they will render in a template that will be created for that purpose.
 
@@ -141,7 +141,7 @@ After getting the data that I want, I will loop through the posts and `createPag
 
 > To go through this in more detail gatsby provides a great [documentation](https://www.gatsbyjs.org/docs/node-apis/#createPages) that could help you.
 
-## A blog post template
+# A blog post template
 
 This will be crucial for you to render your post in the way that you want it. Now that you have all the information that you need, you just need to create the template so that all the post would render in the same way in a programmatic way. The first thing to do here is to create a folder `src/templates/blogPost.js`. Actually in the step before, I was already considering that you will be doing this.
 
@@ -192,7 +192,7 @@ The `blogPost.js` will take the `pathSlug` in its props so that you can use grap
 
 After getting the data passed into my component is just a matter of designing the component in the form that I want to. Here, I simply applied same CSS to render with a similar style when compared to the `index.js`.
 
-## Building the tag's pages automatically
+# Building the tag's pages automatically
 
 Now starts the interesting thing, building the tag's pages considering the inputs in the markdown files in a programmatic way. First of all you will need take into account that in your markdown files you will need to have those tags in your `frontmatter`.
 
@@ -271,7 +271,7 @@ For all tags I created `/tags` as the slug and will render that in `allTagsIndex
 
 The one thing that is missing here is that you will need to call the function that we just created `createTagPages` into the `exports.createPages` after the `.then` so the we can receive the `posts` as one of the arguments.
 
-## Rendering the post in the proper pages
+# Rendering the post in the proper pages
 
 Finally, the only thing that we are missing out are the template pages that we need to create. The templates will receive receive information via `pageContext` and render that information to the DOM accordingly. Bear in mind that `gatsby-node.js` will be injecting tags and posts arrays into the templates.
 
@@ -319,7 +319,7 @@ export default AllTagsTemplate;
 
 As you can see, this component will receive `pageContext` and we will deconstruct `posts` and `tags` so that we can render them in our jsx.
 
-## Bonus: creating a tag menu
+# Bonus: creating a tag menu
 
 For me is was also interesting to test the concept of creating a menu for our tags, so that the user could click and could see the posts that had those tags. Here I managed to implement that with `TagsMenu.js` and `Tag.js` components. I am sure that this is not the best implementation, but it was a quick way for me to test this out and learn.
 

@@ -17,7 +17,7 @@ While I was learning how to build my own contact form and connected to Airtable 
 
 Enough about my Airtable love and let's build our form.
 
-## Starting with the Form UI
+# Starting with the Form UI
 
 In terms of structure, and there are probably one thousand ways to do this, I have started with building 2 components, one where I will keep my `input` elements, and the other where I will have my `form`. The input element will be designed in my `input.js` component whereas my form will be in the `mailListForm.js` component. Let's see what I have done in my input component:
 
@@ -123,7 +123,7 @@ export default mailListForm
 
 In terms of UI, and again, not considering styling (for this you should check my [repo](https://github.com/tiagofsanchez/TiagoFSanchez)), you will need to think about **(1)** the input component, **(2)** the button and **(3)** the text message that you will show once users submit their name and email. You could obviously ask for more information by easily creating a new `Intput` element, however less is more in forms so I decided to go with only name and email.
 
-## Managing the state of my form
+# Managing the state of my form
 
 There is one thing to highlight here before we go through our event handlers; for this component to work properly we need to build a class component instead of a functional component so that we can manage the state and pass it on to our async function that will `POST` the information to Airtable.
 
@@ -217,7 +217,7 @@ export default mailListForm
 
 If you are trying to implement this at the moment, you should `console.log(this.state)` within your `formChangeHandler` to check if your `onChange` is working properly and really changing the state of your component every time that you input information into your form. It should be ok, but it is always good to check before continuing.
 
-## Connecting to Airtable using their API
+# Connecting to Airtable using their API
 
 Now we will be submitting the information that the user inputs into de form and push it to a table in Airtable. Needless to say that you will need to **(1)** get and Airtable account, **(2)** create a base and **(3)** a table to achieve that.
 
@@ -286,7 +286,7 @@ There are a couple of things to bear in mind here, one is that you need to insta
 
 It is important to highlight here and this was the mistake that I was doing that the `headers` object for the async request need to be exactly as per the [documentation](https://airtable.com/api). Yes, I know, a rookie mistake, but that tends to happen, so just watch out for that.
 
-## Environment variables with NetliFy and Gatsby
+# Environment variables with NetliFy and Gatsby
 
 I was stoked by having nailed it! Pushed the code into my git repo, was testing by implementation in production and boom 💥! It didn't work! Damm... I felt really bad and it took me a lot of time to figure out why this was happening. Now it seems obvious but when this happened it wasn't.
 

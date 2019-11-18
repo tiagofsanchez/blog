@@ -28,7 +28,7 @@ Alternatives:
 - [React Move](https://react-move.js.org/#/)
 - [React Router Transition](https://github.com/maisano/react-router-transition)
 
-## Animation is not only CSS
+# Animation is not only CSS
 
 Animation is all about CSS and styling your components in a certain way. The big difference here is that in React we are used to only render components whenever they are needed and depending on user's input in the UI. That means, and here referring to our `Modal.js`, that if you would like to change inject animation into the component you would need to (1) have a `state` prop that will be triggering that, (2) `Modal.js` would need to use that prop to change the CSS. However, if you only considering doing this, the `Modal.js` would always be rendered on your DOM. Let's have a look:
 
@@ -78,7 +78,7 @@ const modal = props => {
 
 This will change the CSS and you can inject the style that you would like to. You can check my [git repo](https://github.com/tiagofsanchez/ReactAnimation) and dig into the CSS files.
 
-## Enter React Transition Group
+# Enter React Transition Group
 
 Yes, another library! For me, as given that I super new to coding, this is very interesting. On one hand I am blown away with the fact that there are so many open sourced resources that one can use for their projects🙏! On the other hand, part of me feels that this can be overwhelming to a newbie.
 
@@ -124,7 +124,7 @@ export default modal;
 
 Now you, our `Modal.js` component will render when it needs to, with the proper animation, and will `unmountOnExit`, meaning that will not be rendered in your DOM when the user closes the Modal.
 
-## Group animation
+# Group animation
 
 Things get a little bit different when you are trying to animate a `list` in your DOM as that element will normally be used within a `map()` method. If we implement the `<CSSTransition>` this will impact the overall list and not consider the different sub-elements of that list. The implementation will be a little bit different and we will be using a different component:
 

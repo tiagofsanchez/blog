@@ -34,7 +34,7 @@ While [one of my latest posts](https://tiagofsanchez.netlify.com/2019-09-12-blog
 
 The idea is simple, I want to have a static header so that I can have my name always visible and I also want to have to have the **night** and **day** toggle always available for the user. At the end of the end, I am also expecting to create and **about** page and that, together with the **categories** of the blog posts will be staying on the `NavBar` that I want to build.
 
-## Adding navMenu as header of the blog
+# Adding navMenu as header of the blog
 
 Let's get started then. First things first, I knew that I needed to change my `layout.js` component and, obviously create a new component, that in my case I called `navMenu.js`.
 
@@ -69,7 +69,7 @@ Above you can see I have added `<NavMenu />` into my `layout.js` component, so l
 
 So far, easy. Now let's go to the more challenging piece.
 
-## Building navMenu component
+# Building navMenu component
 
 Bellow, and to simplify, I will only share the `return` of the component as this will be the biggest difference from the `header.js` component, so here it goes
 
@@ -207,7 +207,7 @@ Now I have one less constant and I am dynamically taking care of the style on a 
 
 I was not particular happy with the implementation of the `navMenu.js` component together with the old avatar, so I had to change that a little bit.
 
-## A better me on the avatar
+# A better me on the avatar
 
 To make that change, I need to change the `header.js` component as well as to create a `headerBio.js` to accommodate for a nicer avatar on my "main blog" page. Basically I didn't want the same styling used on the avatar at the end of each post and was looking for something a little bit bigger and with a central position on the page.
 

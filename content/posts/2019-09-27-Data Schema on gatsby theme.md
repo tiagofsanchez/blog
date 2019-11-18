@@ -20,7 +20,7 @@ My solution and implementation to passing data into any given component is not t
 
 From a conceptual stand point, I should be separating the data structure of my site and the UI aspect of it as this clearly splits both concepts and it also could be very helpful if you are working in a team where some prefer to work on the site data structure and others on the UI aspect of your site.
 
-## There are 2 forms of shadowing (not really)
+# There are 2 forms of shadowing (not really)
 
 After reading Chris Biscardi posts ([post 1](https://www.christopherbiscardi.com/post/component-shadowing-in-gatsby-child-themes/) and [post 2](https://www.gatsbyjs.org/blog/2019-01-29-themes-update-child-theming-and-component-shadowing/)) on component shadowing I came to the conclusion that there are effectively, for the `gatsby-theme-blog`, two themes. One is the parent and another one is the child theme. If you look in `node_modules`, this is what you will see:
 
@@ -50,7 +50,7 @@ Despite the fact that only now I am able to grasp that concept (yes, I know it t
 
 If you are reading this now and you haven't committed to inject data into your UI child theme, then you are in the perfect position to implement this the right way. My implementation below is more like a quick fix and not necessarily a robust and logical implementation.
 
-## Pulling data into `post` component
+# Pulling data into `post` component
 
 As I mentioned before, the only reason I am doing this is because I reckon the user will benefit to have access to more information about the blog post itself before starting to read it. A couple of more details, such as **timeToRead**, and information that I would be using on the **frontmatter** of my md files will be important from the reader standpoint.
 
