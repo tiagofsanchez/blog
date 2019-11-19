@@ -28,6 +28,7 @@ const SmallAvatar = props => {
         <img
           src={avatar.photo}
           sx={{ width: 70, height: 70, borderRadius: 999, mr: `15px` }}
+          alt="my picture"
         />
         <Styled.p>{avatar.description}</Styled.p>
       </div>

@@ -52,6 +52,8 @@ const AvatarLinks = props => {
                   p: 1,
                   ":hover": { bg: `pink` }
                 }}
+                alt={element.label}
+                key={element.label}
               />
             </a>
           </div>
