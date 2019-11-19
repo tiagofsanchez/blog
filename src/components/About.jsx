@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import AvatarLinks from "../components/Avatar/AvatarLinks";
-import us from "../../content/images/us.png";
+import Img from "gatsby-image";
 
 /** @jsx jsx */
 import { Styled, jsx } from "theme-ui";
 
 class About extends Component {
   render() {
-    const { data } = this.props;
-    console.log(data);
+    const { edges } = this.props.data.images;
+    console.log(edges);
     return (
       <>
         <div
@@ -43,7 +43,16 @@ class About extends Component {
           of the four of us 😎! For some reason I couldn't find a nice picture
           with the four of us, go figure!
         </Styled.p>
-        <Styled.img src={us} alt="pictures" />
+        <div sx={{ display: `flex` }}>
+          {edges.map(image => {
+            return (
+              <Img
+                fixed={image.node.childImageSharp.fixed}
+                sx={{ textAlign: `center` }}
+              />
+            );
+          })}
+        </div>
       </>
     );
   }
