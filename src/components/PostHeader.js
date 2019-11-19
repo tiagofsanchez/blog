@@ -37,7 +37,8 @@ const PostHeader = (props) => {
               borderRadius: `5px`,
               p: 1,
               mb: `10px`,
-              mr: 2
+              mr: 2,
+              fontWeight: `bold`
             }}
             to={`/categories/${_.kebabCase(post.category)}/`}
           >

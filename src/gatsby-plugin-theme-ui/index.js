@@ -103,6 +103,13 @@ export default {
       mt: 2,
       mb: 2
     },
+    h2: {
+      fontSize: 20,
+      fontWeight:"bold",
+      color: "primary",
+      mt: 2,
+      mb: 2
+    },
     a: {
       color: `primary`
     },

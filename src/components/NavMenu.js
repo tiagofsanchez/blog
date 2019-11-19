@@ -67,19 +67,19 @@ class NavMenu extends React.Component {
             }}
           >
             <Link to="/" sx={{textDecoration: `none`, color: `primary`}}>
-              <div>{siteTitle}</div>
+              <Styled.h2>{siteTitle}</Styled.h2>
             </Link>
             <div style={{ display: `flex`, alignItems: `center` }}>
               {menuLinks.map(link => {
                 return (
-                  <Styled.h3
+                  <Styled.h2
                     key={link.url}
                     as={Link}
                     to={link.url}
                     sx={{ mr: "10px", textDecoration: `none`, color: `primary` }}
                   >
                     {link.name}
-                  </Styled.h3>
+                  </Styled.h2>
                 );
               })}
               <ToogleMode />
