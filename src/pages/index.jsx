@@ -53,9 +53,10 @@ class Index extends React.Component {
             More posts...
           </Styled>
         </section>
-        <section>
+        {/* Taking it out for the time being */}
+        {/* <section>
           <MailingList />
-        </section>
+        </section> */}
       </Layout>
     );
   }
