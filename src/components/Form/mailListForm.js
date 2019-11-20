@@ -77,7 +77,6 @@ class mailListForm extends React.Component {
       <button
         sx={{
           m: 3,
-          p: 2,
           background: `pink`,
           borderRadius: `10px`,
           boxShadow: `1px 2px 10px rgba(0, 0, 0, 1)`,
@@ -92,9 +91,7 @@ class mailListForm extends React.Component {
         }}
         onSubmit={e => this.formSubmitHandler(e)}
       >
-        <Styled.p sx={{ fontFamily: `body`, fontSize: "15px" }}>
-          Sign me up
-        </Styled.p>
+        <p>Sign me up</p>
       </button>
     );
 
