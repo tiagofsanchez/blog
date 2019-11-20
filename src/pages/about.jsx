@@ -17,6 +17,7 @@ const AboutPage = props => {
 
 export default AboutPage;
 
+//this query will get me all the images in that folder
 export const query = graphql`
   {
     images: allFile(
@@ -25,7 +26,7 @@ export const query = graphql`
       edges {
         node {
           childImageSharp {
-            fixed {
+            fixed(height: 500) {
               ...GatsbyImageSharpFixed
             }
             fluid {

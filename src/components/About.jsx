@@ -48,7 +48,7 @@ class About extends Component {
             return (
               <Img
                 fixed={image.node.childImageSharp.fixed}
-                sx={{ textAlign: `center` }}
+                sx={{ mx: `20px` }}
               />
             );
           })}
