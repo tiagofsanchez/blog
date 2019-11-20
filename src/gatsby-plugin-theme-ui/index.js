@@ -99,15 +99,23 @@ export default {
     // from typography overrideThemeStyles
     h1: {
       fontSize: 32,
+      fontWeight: "heading",
       color: "primary",
-      mt: 2,
+      mt: 4,
       mb: 2
     },
     h2: {
-      fontSize: 20,
-      fontWeight:"bold",
+      fontSize: 24,
+      fontWeight: "bold",
       color: "primary",
-      mt: 2,
+      mt: 4,
+      mb: 2
+    },
+    h3: {
+      fontSize: 20,
+      fontWeight: "bold",
+      color: "primary",
+      mt: 3,
       mb: 2
     },
     a: {
