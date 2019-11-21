@@ -26,7 +26,7 @@ export const query = graphql`
       edges {
         node {
           childImageSharp {
-            fixed(height: 500) {
+            fixed {
               ...GatsbyImageSharpFixed
             }
             fluid {
