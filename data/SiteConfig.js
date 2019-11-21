@@ -3,7 +3,7 @@ const config = {
   siteTitleShort: "tfs stuff", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "tiagofsanchez stuff", // Alternative site title for SEO.
   siteLogo: "", // Logo used for SEO and manifest.
-  siteUrl: "https://gatsby-tfs-starter.netlify.com/", // Domain of your website without pathPrefix.
+  siteUrl: "https://tiagofsanchez.com/", // Domain of your website without pathPrefix.
   pathPrefix: "/tfs", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "A blog about react, innovation, travel and other stuff", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
@@ -22,13 +22,13 @@ const config = {
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   avatar: {
     description:
-      "I am learning to code ReactJS (from scratch) and I have built this starter to learn how Gatsby works and to build my blog!",
+      "I am learning to code ReactJS (from scratch) and I have built this blog to share that journey and to put ✒️'pen to paper' on stuff that I like to do and to think about!",
     photo: "https://avatars1.githubusercontent.com/u/11288873?s=400&v=4"
   },
   userLinks: [
     {
       label: "github",
-      url: "https://github.com/tiagofsanchez/tfs-starter"
+      url: "https://github.com/tiagofsanchez/"
     },
     {
       label: "linkedin",
