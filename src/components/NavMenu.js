@@ -59,11 +59,12 @@ class NavMenu extends React.Component {
               alignItems: `center`,
               maxWidth: `container`,
               m: "auto",
-              px: 2
+              mt:'15px',
+              px: 3
             }}
           >
-            <Link to="/" sx={{ textDecoration: `none`, color: `primary` }}>
-              <Styled.h3>{siteTitle}</Styled.h3>
+            <Link to="/" sx={{ textDecoration: `none` }}>
+              <Styled.h3 sx={{ my: 0 }}>{siteTitle}</Styled.h3>
             </Link>
             <div style={{ display: `flex`, alignItems: `center` }}>
               {menuLinks.map(link => {
@@ -73,7 +74,8 @@ class NavMenu extends React.Component {
                     as={Link}
                     to={link.url}
                     sx={{
-                      mr: "10px",
+                      mr: `5px`,
+                      my: 0,
                       textDecoration: `none`,
                       color: `primary`
                     }}
