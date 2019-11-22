@@ -35,6 +35,8 @@ class mailListForm extends React.Component {
     e.preventDefault();
     const { name, email } = this.state;
 
+    console.log(process.env.GATSBY_AIRTABLE_APP_ID)
+    
     const data = {
       records: [
         {
