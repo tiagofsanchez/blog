@@ -41,10 +41,10 @@ class About extends Component {
           of the four of us 😎! For some reason I couldn't find a nice picture
           with the four of us, go figure!
         </Styled.p>
-        <div sx={{ display: `flex`, mb: `20px` }}>
+        <div sx={{ display: `flex`, m: `auto`, height: `auto` }}>
           {edges.map(image => {
             return (
-              <div sx={{ width: `300px`, height: `100px` }}>
+              <div sx={{ width: `300px`, height: `auto` }}>
                 <Img
                   fluid={image.node.childImageSharp.fluid}
                   sx={{ mx: `5px` }}
