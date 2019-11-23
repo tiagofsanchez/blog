@@ -1,29 +1,22 @@
 import React from "react";
 import siteConfig from "../../../data/SiteConfig";
-import AvatarLinks from "./AvatarLinks";
 
 /** @jsx jsx */
 import { jsx, Styled } from "theme-ui";
 
 const SmallAvatar = props => {
   const { avatar } = siteConfig;
-  const { siteTitle } = siteConfig;
 
   return (
     <>
-      <Styled.h2
+      <Styled
         sx={{
-          mt: 5,
           color: `primary`,
-          mb: 0,
+          mt: 4,
           borderTop: `1px solid`,
-          pt: "15px",
-          textAlign: `center`
+          pt: "15px"
         }}
-      >
-        {siteTitle}
-      </Styled.h2>
-
+      />
       <div sx={{ display: `flex`, alignItems: `center`, mb: 2, mt: 2 }}>
         <img
           src={avatar.photo}
@@ -32,9 +25,7 @@ const SmallAvatar = props => {
         />
         <Styled.p>{avatar.description}</Styled.p>
       </div>
-      <div sx={{ textAlign: `left` }}>
-        <AvatarLinks size={"small"} />
-      </div>
+      <div sx={{ textAlign: `left` }} />
     </>
   );
 };
