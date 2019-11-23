@@ -52,10 +52,11 @@ export default class PostTemplate extends React.Component {
           <Styled.h1 sx={{ mb: 0, fontSize: 60 }}>{post.title}</Styled.h1>
           <PostHeader post={postWip[0]} />
           <MDXRenderer>{postNode.body}</MDXRenderer>
+          <SocialLinks postPath={slug} postNode={postNode} />
           <div sx={{ mt: "40px" }}>
             <SmallAvatar />
           </div>
-          {/* <SocialLinks postPath={slug} postNode={postNode} /> */}
+
           {/* this is for Disqus implemetation (that I am not using...but fell free to use) */}
           {/* <UserInfo config={config} />
           <Disqus postNode={postNode} /> */}
