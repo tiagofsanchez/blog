@@ -11,10 +11,6 @@ import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import SmallAvatar from "../components/Avatar/SmallAvatar";
 
-//if you want to use Discus
-import UserInfo from "../components/UserInfo/UserInfo";
-import Disqus from "../components/Disqus/Disqus";
-
 export default class PostTemplate extends React.Component {
   render() {
     const { data, pageContext } = this.props;
