@@ -66,7 +66,7 @@ class mailListForm extends React.Component {
         })
         .catch(error => console.log(error));
     } else {
-      window.alert("Enter a correct email");
+      window.alert("Please, enter a correct email");
     }
   };
 
@@ -91,21 +91,14 @@ class mailListForm extends React.Component {
         }}
         onSubmit={e => this.formSubmitHandler(e)}
       >
-        <p>Sign me up</p>
+        <Styled.p sx={{ m: 0 }}>Sign me up</Styled.p>
       </button>
     );
 
-    const thankYou = (
-      <Styled.h2 sx={{ color: `primary`, mt: 3 }}>
-        Thank you for joining!
-      </Styled.h2>
-    );
-
-    return (
+    const myForm = (
       <Styled
         sx={{
           border: `1px solid pink`,
-          mx: 4,
           px: 2,
           my: `80px`,
           boxShadow: `1px 2px 10px rgba(0, 0, 0, 0.5)`,
@@ -114,44 +107,46 @@ class mailListForm extends React.Component {
           fontSize: `13px`
         }}
       >
-        {isSubmited ? (
-          thankYou
-        ) : (
-          <Fragment>
-            <Styled.h2 sx={{ color: `primary`, mt: 3 }}>
-              Like what you see?
-            </Styled.h2>
-            <Styled.p>
-              No spam, just me trying to learn how to code! And same other
-              interesting stuff!
-            </Styled.p>
-            <form onSubmit={e => this.formSubmitHandler(e)}>
-              <Input
-                inputtype="input"
-                label="Your name"
-                placeholder="to get to know you..."
-                name="name"
-                value={name}
-                onChange={(event, name, value) =>
-                  this.formChangeHandler(event, name, value)
-                }
-              />
-              <Input
-                inputtype="input"
-                label="And email"
-                placeholder="to send you good stuff..."
-                name="email"
-                value={email}
-                onChange={(event, name, value) =>
-                  this.formChangeHandler(event, name, value)
-                }
-              />
-              {summitButton}
-            </form>
-          </Fragment>
-        )}
+        <Styled.h2 sx={{ color: `primary`, mt: 3 }}>
+          Like what you see?
+        </Styled.h2>
+        <Styled.p>
+          No spam, just me trying to learn how to code! And same other
+          interesting stuff!
+        </Styled.p>
+        <form onSubmit={e => this.formSubmitHandler(e)}>
+          <Input
+            inputtype="input"
+            label="Your name"
+            placeholder="to get to know you better..."
+            name="name"
+            value={name}
+            onChange={(event, name, value) =>
+              this.formChangeHandler(event, name, value)
+            }
+          />
+          <Input
+            inputtype="input"
+            label="And email"
+            placeholder="to send you good stuff..."
+            name="email"
+            value={email}
+            onChange={(event, name, value) =>
+              this.formChangeHandler(event, name, value)
+            }
+          />
+          {summitButton}
+        </form>
       </Styled>
     );
+
+    const thankYou = (
+      <Styled.h2 sx={{ color: `primary`, mt: 3 }}>
+        Thank you for joining!
+      </Styled.h2>
+    );
+
+    return <div>{isSubmited ? thankYou : myForm}</div>;
   }
 }
 
