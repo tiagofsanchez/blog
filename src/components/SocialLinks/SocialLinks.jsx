@@ -4,8 +4,6 @@ import {
   LinkedinShareButton,
   TwitterShareButton,
   RedditShareButton,
-  FacebookShareCount,
-  RedditShareCount,
   FacebookIcon,
   TwitterIcon,
   LinkedinIcon,
@@ -25,8 +23,6 @@ class SocialLinks extends Component {
     const iconSize = mobile ? 30 : 50;
     const fillColor = "#999999";
     const BgStyle = { fill: "#999999", r: 0 };
-    const filter = count => (count > 0 ? count : "");
-    const renderShareCount = count => <div>{filter(count)}</div>;
 
     const reddit = (
       <div>
@@ -46,16 +42,6 @@ class SocialLinks extends Component {
             logoFillColor={fillColor}
             iconBgStyle={BgStyle}
           />
-          <RedditShareCount
-            url={url}
-            sx={{
-              color: fillColor,
-              fontSize: 16,
-              fontWeight: `bold`
-            }}
-          >
-            {count => renderShareCount(count)}
-          </RedditShareCount>
         </RedditShareButton>
       </div>
     );
@@ -99,9 +85,6 @@ class SocialLinks extends Component {
           logoFillColor={fillColor}
           iconBgStyle={BgStyle}
         />
-        <FacebookShareCount url={url}>
-          {count => renderShareCount(count)}
-        </FacebookShareCount>
       </FacebookShareButton>
     );
 
@@ -128,7 +111,7 @@ class SocialLinks extends Component {
     );
 
     return (
-      <div sx={{ display: `flex`, ml: `-16px` }}>
+      <div sx={{ display: `flex`, alignItems: `center`, ml: `-16px` }}>
         {linkedIn}
         {facebook}
         {reddit}
