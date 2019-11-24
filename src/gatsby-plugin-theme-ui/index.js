@@ -164,6 +164,14 @@ export default {
         highlight: lightblue,
         heading: white
       }
+    },
+    buttons: {
+      primary: {
+        bg: "primary"
+      },
+      dark: {
+        bg: "dark"
+      }
     }
   },
   prism

@@ -72,27 +72,47 @@ class mailListForm extends React.Component {
 
   render() {
     const { name, email, isSubmited } = this.state;
+    const { formType } = this.props;
+
+    let formHeader = null;
+    if (formType == "homePage") {
+      formHeader = (
+        <>
+          <Styled.h2 sx={{ color: `primary`, mt: 3 }}>
+            Like what you see?
+          </Styled.h2>
+          <Styled.p>
+            No spam, just me trying to learn how to code! And same other
+            interesting stuff!
+          </Styled.p>
+        </>
+      );
+    }
 
     const summitButton = (
-      <button
-        sx={{
-          m: 3,
-          background: `pink`,
-          borderRadius: `10px`,
-          boxShadow: `1px 2px 10px rgba(0, 0, 0, 1)`,
-          cursor: `pointer`,
-          border: `none`,
-          outline: `none`,
-          ":hover": {
-            background: `#d23669`,
-            color: `white`,
-            outline: `pink`
-          }
-        }}
-        onSubmit={e => this.formSubmitHandler(e)}
-      >
-        <Styled.p sx={{ m: 0 }}>Sign me up</Styled.p>
-      </button>
+      <div>
+        <button
+          sx={{
+            m: 4,
+            px: 3,
+            background: `pink`,
+            borderRadius: `5px`,
+            cursor: `pointer`,
+            border: `none`,
+            outline: `none`,
+            fontFamily: `inherit`,
+            fontSize: `inherit`,
+            ":hover": {
+              background: `#d23669`,
+              color: `white`,
+              outline: `pink`
+            }
+          }}
+          onSubmit={e => this.formSubmitHandler(e)}
+        >
+          <Styled.p sx={{ m: 0 }}>Sign me</Styled.p>
+        </button>
+      </div>
     );
 
     const myForm = (
@@ -107,13 +127,7 @@ class mailListForm extends React.Component {
           fontSize: `13px`
         }}
       >
-        <Styled.h2 sx={{ color: `primary`, mt: 3 }}>
-          Like what you see?
-        </Styled.h2>
-        <Styled.p>
-          No spam, just me trying to learn how to code! And same other
-          interesting stuff!
-        </Styled.p>
+        {formHeader}
         <form onSubmit={e => this.formSubmitHandler(e)}>
           <Input
             inputtype="input"

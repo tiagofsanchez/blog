@@ -7,7 +7,7 @@ import SEO from "../components/SEO/SEO";
 import BigAvatar from "../components/Avatar/BigAvatar";
 import config from "../../data/SiteConfig";
 import AllCategories from "../components/AllCategories";
-import MailingList from "../components/Form/mailListForm";
+import MailListForm from "../components/Form/mailListForm";
 
 /** @jsx jsx */
 import { Styled, jsx } from "theme-ui";
@@ -55,8 +55,8 @@ class Index extends React.Component {
         </section>
 
         <section>
-          <MailingList />
-        </section> 
+          <MailListForm formType={"homePage"} />
+        </section>
       </Layout>
     );
   }

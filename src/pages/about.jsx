@@ -4,6 +4,10 @@ import Layout from "../layout";
 import { graphql } from "gatsby";
 import About from "../components/About";
 import config from "../../data/SiteConfig";
+import MailListForm from "../components/Form/mailListForm";
+
+/** @jsx jsx */
+import { Styled, jsx } from "theme-ui";
 
 const AboutPage = props => {
   const { data } = props;
@@ -11,6 +15,7 @@ const AboutPage = props => {
     <Layout>
       <Helmet title={`About | ${config.siteTitle}`} />
       <About data={data} />
+      <MailListForm formType={"homePage"} />
     </Layout>
   );
 };
