@@ -7,7 +7,7 @@ tags:
   - api
   - digital
   - growth
-publish: "yes"
+publish: "no"
 ---
 
 Anyone that exchanged thoughts with me will know that I am a big fan of API's as a mean to create new propositions, business models and quickly build and validate products and services that can be used by customers anywhere they are. 
