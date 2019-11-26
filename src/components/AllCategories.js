@@ -11,17 +11,18 @@ import { Styled, jsx } from "theme-ui";
 const AllCategories = () => {
     const PostCategories = useStaticQuery(graphql`
     {
-      allMdx {
+      allMdx (  filter: { frontmatter: { publish: { eq: "yes" } } }) {
         edges {
           node {
             frontmatter {
               category
+              
             }
           }
         }
       }
     }
-  `)
+  `);
 
     const { edges } = PostCategories.allMdx
 
