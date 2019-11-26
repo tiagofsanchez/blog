@@ -155,7 +155,7 @@ class mailListForm extends React.Component {
     );
 
     const thankYou = (
-      <Styled.h2 sx={{ color: `primary`, mt: 3 }}>
+      <Styled.h2 sx={{ color: `primary`, mt: 6 , textAlign: `center `}}>
         Thank you for joining!
       </Styled.h2>
     );
