@@ -1,5 +1,5 @@
 ---
-title: "APIs, the new railroad, a simple technology wizardry"
+title: "APIs are the new railroad"
 cover: "../images/API-railroad.png"
 date: 2019-11-26
 category: "🚀 Innovation"
@@ -7,18 +7,18 @@ tags:
   - api
   - digital
   - growth
-publish: "no"
+publish: "yes"
 ---
 
-Anyone that exchanged thoughts with me will know that I am a big fan of API's as a mean to create new propositions, business models and quickly build and validate products and services that can be used by customers anywhere they are. 
+Anyone that exchanged thoughts with me will know that I am a big fan of APIs as a mean to create new propositions, business models and quickly build and validate products and services that can be used by customers anywhere they are. 
 
-For me technology is of the utmost importance in this day an age. I totally buy in to the vision of Marc Andreessen that "software is eating the world".
+For me technology is of the utmost importance in this day an age. I totally buy into Marc Andreessen's vision that "software is eating the world".
 
-Now that we got that out of the way and I have confessed by biases, why should you believe in that? What does it mean for you, specially if you don’t necessarily like or want to have anything to with do with technology. 
+Now that we got that out of the way and I have confessed by bias, why should you believe in that? What does it mean for you, specially if you don’t necessarily like or want to have anything to do with technology. 
 
 To better explain why you should care, let’s go back in time.
 
-# How Europe conquered the world
+# Was Europe technology advanced?
 
 History is a very interesting thing and it can definitely teach us a lot. Looking into the past as a way to understand what one should expect in the future can be misleading and we are, more often than not, wrong. However, indulge me on this thought process as I try to make sense of the European history and any lessons we can get from that.
 
@@ -36,7 +36,12 @@ It was indeed a fact that at the time, Europe was going through their Scientific
 
 In case you are guessing, the answer to the question above is: No! It was not difficult for the Chinese or India Empire to copy European technology advancements. The problem wasn't the lack of technology or knowledge, they lacked the values and myths that took centuries to form in the West and which could not be copied rapidly. 
 
-As a result of this creed and, in a way, social structure and new global order, Europe was able to steam ahead. These logistical advances played a very big and important role in the European economic growth.
+# Europe's technology wizardry: the railroad
+
+The railroad was not an advanced technology wizardry and anyone that wanted to copy it, could. Europe believed that by building railroads across different geographies canned food could reach their soldiers, medicines, doctors and supplies could quickly be deployed wherever there was a need for them. Goods and information could travel fast. As a result of this creed and, in a way, social structure and new global order, Europe was able to steam ahead. These logistical advances played a very big and important role in the European economic growth.
+
+Today nobody questions the importance of the railroad. Trade, as we know it, couldn't exist without it and it would be extremely difficult for the Industrial Revolution to have happened. I am clearly simplifying things here, but the point that I am trying to make is that, it would be very hard for you to build an iPhone manufacturing plant in China if all the iPhone components weren't build there. How would you transport the chips to your plant? Could you get the screens to the assembly line in time? What would happen if you wanted to change your suppliers and they were outside of China? In short, the overall infrastructure grid that manufacturing, trade and commerce depend on are the "pipes" of the global economy and, to same extent, engines of innovation.
+
 
 # The Digital Era
 
@@ -54,18 +59,26 @@ However, the startup revolution started out slowly but gained great momentum wit
 
 Today we keep hearing words like: Digital ecosystem , seamless customer journey, platforms, etc... This concepts are ubiquitous but what do they mean in practice? And why are they possible today? Simply put they are the result a fully integrated technology landscape via Application Programmatic Interfaces, or APIs. 
 
-# APIs connecting the world
+# APIs the new railroad connecting the world
 
 You probably don't realize, but you are reading this blog post through an App that uses hundreds of API's to work. Your simple web browser uses [thousands of APIs](https://frontendmasters.com/books/front-end-handbook/2018/learning/web-api.html) to render information so that you can read it on your screen. 
 
-The companies that you probably love - Uber, Airbnb, and many more - have a vast number of third-party APIs from third parties. Uber, for example, uses google maps for global maps, twilio for communications and Braintree for payments. What is interesting is that this new companies realize that they are better interconnected in a seamless way, then apart. Uber doesn't want to build a global mapping infrastructure, communication tools neither payment rails, however they can't live without them.  
+The companies that you probably love - Uber, Airbnb, and many more - have a vast number of third-party APIs from third parties. Uber, for example, uses google maps for global maps, twilio for communications and Braintree for payments. What is interesting is that this new companies realize that they are better interconnected in a seamless way, then apart. Uber doesn't want to build a global mapping infrastructure, communication tools neither payment rails, however they can't live without them.In a similar way Apple doesn't want to own and build all the components of the iPhone, and they shouldn't. Apple is smart, selects and builds what are the core parts of their business and outsources what is not.
 
-On the other hand, API-first companies, and as a result, API-first products are far more extensible, are easier for customers to integrate with and have the ability to create and foster fantastic communities around different use cases. Companies such as Gatsby, Airtable and Algolia are a great examples of startups that have fantastic communities around their business. 
+Apple business model is only possible due to the existing logistic infrastructure. Similarly, Uber value proposition wouldn't exist without APIs. API-first companies, and as a result, API-first products are far more extensible, are easier for customers to integrate with and have the ability to create and foster fantastic communities around different use cases. Companies such as [Gatsby](https://www.gatsbyjs.org/), [Airtable](https://airtable.com/) and [Algolia](https://www.algolia.com/) are great examples of startups that have built fantastic communities around their products.
 
 # What does this mean for corporates? 
 
-Time showed us that the Chinese Empire, was on the wrong side of history. As mentioned previously, the technology gap was not that wide, however the Chinese didn't believe that railroads were a big economic propeller. However, they have learned their lesson and are betting big on the API economy. 
+Time has showed us that the Chinese Empire, was on the wrong side of history regarding the railroad. As mentioned previously, the technology gap was not that wide, however the Chinese didn't believe that railroads were a big economic propeller. They have learned their lesson and are now betting big on the API economy. Companies like Alibaba, Tencent and Baidu are growing at an incredible pace as a result of their API ecosystems.
 
 Despite the fact that same can perceive APIs as same sort of technology wizardry, they are indeed a new way to create and exchange value in a very similar way that railroads did in 1750. Corporates should embrace them as and opportunity to either consume or deliver products and services from or to third-parties. 
+
+While there are a lot of challenges ahead, specially considering topics such as data protection and cyber threat, the opportunity of leveraging APIs far outweighs the risks. To same extent the railroads also faced different their cyber punks, Jesse James was one of the first bandits to hold up a moving train.
+
+Looking into the past can definitely help us try to understand how the future will look like. However, I am biased and I guess that is not necessarily a bad thing.
+
+Are you more concerned with Jesse James? Or do you want to leverage the new railroad?
+
+
 
 
