@@ -15,13 +15,13 @@ Two weeks ago I have started my [ReactJS Nanodegree](https://www.udacity.com/cou
 Despite the fact that I have been learning ReactJS for the past 1 year (oh yeah, 1 year as past by), and this concepts are not totally new to me, I reckon this is an opportunity to reflect on the basics and to consolidate my thinking about ReactJS.
 
 Allow me to jot down a couple of things that I think are very important to know: 
-. React is all about reusable components
-. You have different types of components
-. State, props and constructor, when to use what
-. Components have lifecycle
-. PropTypes, a life savior
-. React route, to create SPA
-. Do you really need controlled components?
+- React is all about reusable components
+- You have different types of components
+- State, props and constructor, when to use what
+- Components have lifecycle
+- PropTypes, a life savior
+- React route, to create SPA
+- Do you really need controlled components?
 
 Before we start is good to highlight that React is, at the end of the day, just JavaScript. I will assume that you know JSX and that words like `state` and `props` are not totally alien to you. You also should be comfortable with ES6 syntax and the implications that functional programming have on JavaScript - if you need a quick refresher on that you can check this quick [introductory course](https://classroom.udacity.com/courses/ud356) from UDACITY.
 
