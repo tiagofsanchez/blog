@@ -32,7 +32,7 @@ const config = {
     },
     {
       label: "linkedin",
-      url: "https://www.linkedin.com/in/tiago-formosinho-sanchez-3764225/"
+      url: "https://www.linkedin.com/in/tiagofsanchez/"
     },
     {
       label: "email",
