@@ -14,26 +14,26 @@ A couple of months back I have decided to learn how to code and it has been a jo
 
 > To be more precise according to my [GitHub](https://github.com/tiagofsanchez) repo I started in **Dec. 2019**! That was when I have entered my first `git push`
 
-I have made some progress since **December** but I am still a rookie with regards to coding. Back them, given that I was completely new to the topic, I had no idea where to start. There are so many online resources that it is difficult to choose from and follow through.
+I have made some progress since **December** but I am still a rookie with regards to coding. Back then, given that I was completely new to the topic, I had no idea where to start. There are so many online resources that it is difficult to choose.
 
-With this post, I hope to be able to help folks that are in the same situation that I was and to help them start. Bear in mind, this is a journey and it will not be an overnight success. If anything, and I am not trying to discourage anyone, you will be burning the midnight oil for a couple of months till you start to get the hang of it.
+With this post, I hope to be able to help folks that are in the same situation that I was. Bear in mind, this is a journey and it will not be an overnight success. If anything, and I am not trying to discourage anyone, you will be burning the midnight oil for a couple of months till you start to get the hang of it.
 
-Make no assumptions, independent of the technologies that you aspire to learn, you will need to put a lot of hours into it and practice. I reckon that learning to code is similar to learning a new language, you can know all the theory, but if you don't really practice it, you will loose it.
+Make no assumptions, independent of the technologies that you aspire to learn, you will need to put a lot of hours into it. I reckon that learning to code is similar to learning a new language, you can know all the theory, but if you don't really practice it, you will loose it.
 
 # Why I ventured into coding
 
-Simply put, I wanted to be able to build stuff. To be autonomous. To create with my own hands, using tools that are out there and are, or rather, should be easy to work with. Going from a concept or idea, through designing and building it was something that always fascinated me.
+Simply put, I wanted to be able to build stuff. To be autonomous. To create with my own hands, using tools that are out there and are, or rather should be, easy to work with. Going from a concept, through designing and building was something that I was fascinated with.
 
 For a couple of years I have been drawn into this topic: **How does one becomes a developer?** or probably better and simpler, **How does one learn how to code?**.
 
-# Were to start
+# Where to start
 
-For me one thing was clear given that I wanted to see things being built. That was the idea of starting with front-end development. As I mentioned before I was eager to see things being built and done and as such thought (and still think) that back-end will be challenging for me as I really like to see the output of all the work that I do.
+For me one thing was clear - I wanted to see things being built. That was why I started with front-end development. As I mentioned before I was eager to see things being built and done.
 
 As I write this, I receive 2 very interesting newsletters from [freecodecamp news](https://www.freecodecamp.org/news/). The first one entitled [beginners roadmap to web development](https://www.freecodecamp.org/news/beginners-roadmap-web-development/) and the second one with the more ambitious title [650 free online programming computer science courses you can start this summer](https://www.freecodecamp.org/news/650-free-online-programming-computer-science-courses-you-can-start-this-summer/).
 Both are great posts that highlight the numerous sources of code and resources that one can tap into. On the other hand it could be overwhelming to anyone that is starting on this journey.
 
-Despite all of the noise, if you really want to learn how to code, you need to choose between client side or server side and that is the same to say front-end or back-end. That will change the resources that you will be tapping into to learn faster.
+Despite all of the noise, if you really want to learn how to code, you need to choose between front-end or back-end. That will change the resources that you will be tapping into to learn faster.
 
 For me, as I mentioned, front-end was the way to go, but it is impossible to shy away from back-end development as you will need at one point to store your data somewhere.
 
