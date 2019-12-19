@@ -19,6 +19,7 @@ const config = {
   userLocation: "", // User location to display in the author segment.
   userAvatar: "", // User avatar to display in the author segment.
   userDescription: "", // User description to display in the author segment.
+  repo: "https://github.com/tiagofsanchez/blog",
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   avatar: {
     description:

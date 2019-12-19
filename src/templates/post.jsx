@@ -4,12 +4,14 @@ import { graphql } from "gatsby";
 /** @jsx jsx */
 import { Styled, jsx } from "theme-ui";
 import { MDXRenderer } from "gatsby-plugin-mdx";
+
 import Layout from "../layout";
 import PostHeader from "../components/PostHeader";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import SmallAvatar from "../components/Avatar/SmallAvatar";
+import { editOnGithub } from "../utils/global";
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -23,6 +25,11 @@ export default class PostTemplate extends React.Component {
     if (!post.category_id) {
       post.category_id = config.postDefaultCategoryID;
     }
+
+    //STUFF WIP
+
+    console.log(post);
+    console.log(editOnGithub(post));
 
     //transforming my data from post into and Array so that I can loop through it
     const postNodeWip = [];
