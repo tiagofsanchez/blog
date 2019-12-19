@@ -11,7 +11,7 @@ const editOnGithub = post => {
   const slug = URLify(post.title);
   return urljoin(
     config.repo,
-    "/tree/master/content/posts",
+    "/blob/master/content/posts",
     `${date}-${slug}.md`
   );
 };

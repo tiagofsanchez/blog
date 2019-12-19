@@ -1,5 +1,5 @@
 ---
-title: "React nanodegree, MyReads"
+title: "React nanodegree, MyReads App"
 cover: ""
 date: 2019-12-15
 category: "🔮 Code"
