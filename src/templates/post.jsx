@@ -12,6 +12,7 @@ import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import SmallAvatar from "../components/Avatar/SmallAvatar";
 import { editOnGithub } from "../utils/global";
+import MailListForm from "../../src/components/Form/mailListForm.js";
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -57,6 +58,7 @@ export default class PostTemplate extends React.Component {
           <MDXRenderer>{postNode.body}</MDXRenderer>
           <SocialLinks postPath={slug} postNode={postNode} />
           <SmallAvatar />
+          <MailListForm />
         </div>
       </Layout>
     );

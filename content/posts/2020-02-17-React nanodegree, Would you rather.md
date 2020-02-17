@@ -1,22 +1,22 @@
 ---
-title: "React nanodegree, week 4 and 5"
+title: "React nanodegree, Would you rather App"
 cover: ""
-date: 2019-12-28
+date: 2020-02-17
 category: "🔮 Code"
 tags:
   - redux
   - learning
   - udacity
-publish: "yes"
+publish: "no"
 ---
 
-This is week 5 of the course, and probably the most challenging one thus far. At least for me. In this post I will discuss how we have implemented redux in our [Chirper Project](https://github.com/tiagofsanchez/reactnd-chirper-app) and the challenges that I faced.
+Wow, it has been a long time since I have posted...so here it goes!
 
-# Chirper Project
+At this moment I am lost in the number of weeks, so I will stop mentioning the week number of my Udacity React nanodegree. In this post I will discuss the thinking behind the my implementation of the [would you rather app](https://reactnd-would-you-rather-project.netlify.com/).
 
-This was a code-along project for my [React Nanodegree program](https://www.udacity.com/course/react-nanodegree--nd019).
+# Would you rather project
 
-As mentioned, this was a code-along project, and here I will try to highlight the stuff that I have learnt as well as the biggest challenges I come across.
+There you
 
 ## First impressions
 
