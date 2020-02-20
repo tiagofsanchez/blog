@@ -1,6 +1,5 @@
 ---
 title: "React nanodegree, week 4 and 5"
-cover: ""
 date: 2019-12-28
 category: "🔮 Code"
 tags:

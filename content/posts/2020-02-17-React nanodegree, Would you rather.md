@@ -1,16 +1,16 @@
 ---
 title: "React nanodegree, Would you rather App"
-cover: ""
+
 date: 2020-02-17
 category: "🔮 Code"
 tags:
   - redux
   - learning
   - udacity
-publish: "no"
+publish: "yes"
 ---
 
-Wow, it has been a long time since I have posted...so here it goes!
+Wow, it has been a long time since I have posted...so here it goes, a little bit more about my React nanodegree journey!
 
 At this moment I am lost in the number of weeks, so I will stop mentioning the week number of my Udacity React nanodegree. In this post I will discuss the thinking behind the my implementation of the [would you rather app](https://reactnd-would-you-rather-project.netlify.com/).
 
@@ -18,277 +18,176 @@ At this moment I am lost in the number of weeks, so I will stop mentioning the w
 
 There you
 
-## First impressions
+## The project approach
 
-WOW! this was the most challenging project I have done thus far. I have to admit that I am struggling to learn Redux - 2 weeks in trying to learn Redux and I would be lying if I told you that fully comprehend how it works.
+Here you will find my project and the steps that I have made to build it. I will follow the guidelines provided by udacity team and they are as follows:
 
-Don't get me wrong I do understand the reasons why I am using it, specially after having finished my first [project](https://github.com/tiagofsanchez/reactnd-project-myreads-starter) where I took it to literally the following statement:
+1. ✏️ Draw All the Views of the App
+2. 🔨 Break Each View Into a Hierarchy of Components
+3. 📅 Determine What Events Happen in the App
+4. 💾 Determine What Data Lives in the Store.
 
-> Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
+Let's get started.
 
-Considering the design implemented on MyReads project I totally understand why Redux exists. In my implementation I have considered one single source of truth to manage the app state and was passing the state as props to numerous components. Every time that the user interacted with the UI I was using callback functions to update my state and re-render the components that were impacted by that change...ufff, it was a lot of hard work.
+## 1.Draw all the views of the app
 
-When I learnt that redux would solve this problem for me I was over the moon. I love the concept of having state management tool that will help me manage the state to create a single source of truth. However, this was as been a hell of a ride... Redux, as a concept is fine to grasp, and according to redux documentation:
+With the help to the following YouTube video we are able to build the different page views.
+- [Would you rather app](https://youtu.be/xfmSkLAL__Q)
 
-1. It is a single source of truth and the state of your whole application is stored in an object tree within a single store
-2. State is read-only and the only way to change the state is to emit an action, an object describing what happened
-3. Changes are made with pure functions and to specify how the state tree is transformed by actions, you write reducers.
+So you will have a couple of different pages here:
+- Home, is it's own component and page `"/home"`
+- Login, rendered in `Home` component `"/home"`
+- QuestionPage, is it's onw component and page `"/question/:id"`
+- LeaderboardPage, is it's own component and page `"/leaderboard"`
+- NewQuestion, is it's onw component and page `"/add"`
+- NoMatch, is it's own component and page (anything that is not defined above will default here)
 
-Effectively you can connect any component that you want to your store. That component will be able to "consume" the information from your state and re-render depending on the changes. On the other hand, by connecting your component to the store you will have access to a function called `dispatch` that will enable, depending on the UI interaction, to make changes to the store and as a result re-render the components for you.
+> At the beginning I had divided `QuestionPage` and `QuestionResultPage`, as I thought this was a better implementation, however I needed to follow the rubric 100% so that your project gets approved 
 
-The other thing that is absolutely amazing about Redux is the time traveling feature. It literally allows you to time travel in order to better understand what happened to your store, what action triggered it and that will be really helpful every time you need to debug your application.
+Note that for every different page, I will need to create a different url, with exception of Login and Home page given they will share the same and will be the root of my app.   
 
-To be honest, easier said than done, so lets have a look to a couple of examples on our Tweeter app.
+I am not sure if I am missing something out, but for now, I reckon this is a very good start and we can always go back to the main project rubric to check if I are missing something out.
 
-## Implementation, how do I think about this
+Let's dive in the components for each page.
 
-No doubt that the building guidelines from the Udacity team are fantastic:
+## 2.Components breakdown
 
-1. Identify What Each View Should Look Like
-2. Break Each View Into a Hierarchy of Components
-3. Determine What Events Happen in the App
-4. Determine What Data Lives in the Store
+Here I will try to breakdown the different components that are needed to build each individual page and view that is presented to the user.
 
-For me these guidelines were extremely useful, and I often went back to check them, however I felt that I was missing a check list to help me navigate the, sorry to say, Redux boilerplate and main concepts. Please bear in mind that I am not criticizing Redux, I def don't have any authority on the matter, I am just sharing my views from a rookie standpoint while tying to build something that would be useful.
+### Login page
 
-### Before you start, the things to do
+From a component stand point, this one will be very simple, it will have an (a) Icon with the logo of the app, (b) a dropdown for the user to select his profile and (c) a submit button to login that user.  
 
-> DISCLAIMER: I am not trying to teach anyone Redux (I don't have authority on the matter) but rather trying to put together a "checklist" that could help anyone, me included.
+![Login Page](https://github.com/tiagofsanchez/reactnd-project-would-you-rather/blob/master/src/Images/LoginApp.png?raw=true)
 
-Before starting you will need to install a couple of things:
+The Login page will be inserted in the App.js file. Actually all my components will be inserted here and will be rendering them according to the user interaction with the my application.
 
-- redux: `yarn add redux`
-- react-redux: `yarn add react-redux`
-- thunk: `yarn add redux-thunk`
+#### Data required
 
-In a very simple way, [redux](https://redux.js.org/) is, oh well, a state management library. The [react-redux](https://react-redux.js.org/) library stitches redux to react and makes both work seamlessly. And[thunk](https://github.com/reduxjs/redux-thunk) is our middleware that will enable API calls in our action creators, that other wise only return objects and wouldn't be able to perform an async request.
+The dropdown (using `semantic-ui-react`) will need to have user information in a certain way to work. As such I have created a function, that is on helper.js file, to display the information properly in the UI and connected this component to the store. 
 
-### Creating a store
+### Home page
 
-To create the store you will need `createStore` from redux and you will also need to set up your reducers and middleware so that you incorporate them on the store. In the case of our tweeter app we did it as follows:
+Existing components 
+- NavBar (will be present in every page with the exception of Login)
+- QuestionCard (for unanswered and answered questions)
 
-```jsx
-//in our index.js
-import { createStore } from "redux";
+![Home Page](https://github.com/tiagofsanchez/reactnd-project-would-you-rather/blob/master/src/Images/HomeApp.png?raw=true)
 
-import reducer from "./reducers";
-import middleware from "./middleware";
+The NavBar will help the user navigate through the App and will get the user access to the `Home`, `New question` and `Leaderboard` page as well as show the avatar for the user and a button to logout the user. 
 
-const store = createStore(reducer, middleware);
-```
+`Home` will divide unanswered and answered questions of a given user. In the UI the user will be able to see the a "toggle" that will enable to change between the different types of questions.
 
-As you can see the store is completely dependent of the reducer and your middleware.
+The `QuestionCard` will display information of the questions and provide a way to answer and unanswered question or check the result of a question that the user as already answered to. 
 
-### Reducer & Action Creators
+#### Data required
 
-The reducer will specify how the application state changes in response to actions depending on the user interaction with the UI. Note that actions only describe what happened not how the state changes, this will be the role of the reducers.
+The `Home` page component will need to be connected to the store and we will need to split the information considering the questions that the user answered and not. We also needed to consider the order. 
 
-A reducer is a pure function and you will not have any side effects, no API calls, no surprises. This is why we will need to have a `thunk` middleware further down the line.
+Similarly `NavBar` component will need to have access to the store to know who is the user logged on, his name and avatar as well as to have access to log the user out by dispatching and action with access to the store to change the `authUser` slice. 
 
-Before we start with defining the reducer it will be very important to understand how the state of your overall app should look like in the form of one object. I must confess, this was a very tricky one for me, and I am not 100% confident that I will get it right on the next time.
 
-According to the Udacity team my store should be something like this:
+### QuestionPage
 
-```js
-{
-  tweets: {
-    tweetId: { tweetId, authorId, timestamp, text, likes, replies, replyingTo},
-    tweetId: { tweetId, authorId, timestamp, text, likes, replies, replyingTo}
-  },
-  users: {
-    userId: {userId, userName, avatar, tweetsArray},
-    userId: {userId, userName, avatar, tweetsArray}
-  }
-}
-```
+- NavBar (as mentioned before will also be present here)
+- QuestionPage 
+- QuestionResultPage 
 
-As a result, you will have, at least 2 slices of state: `tweets` and `users`. As we progressed with the project, we realized that we needed a couple of more things in the state and we ended with the following:
+This component, rendered on `/question/:id` will render different components depending on the user interaction. For unanswered questions, and after the user selects the question to answer, you will have: 
 
-```jsx
-// reducers/index.js
+![Unanswered](https://github.com/tiagofsanchez/reactnd-project-would-you-rather/blob/master/src/Images/QuestionApp.png?raw=true)
 
+On the other hand for answered question or after the user answers a question: 
+
+![Unanswered](https://github.com/tiagofsanchez/reactnd-project-would-you-rather/blob/master/src/Images/ResultApp.png?raw=true)
+
+Note, once again, that the URL is the same and what I am doing here is changing the components that are rendering depending on the user interaction with the UI. This was one of the requirements of the project and I don't believe this was intended to showcase the best practices of app design, but to think about how to solve for a multi component rendering depending on the user input on the UI. 
+
+#### Data required
+
+The `QuestionPage` component will act as a controlled component when the user wants to answer a given question. However it could also be rendering `QuestionResultPage` that will be a component with access to the store. Both components will have access to the store as they will need to get relevant information.`QuestionPage` component will need to dispatch actions to change the different store slices, `questions` and `users`, whereas `QuestionResultPage` is only consuming store information and doesn't need to update anything. 
+
+### New question page
+
+Existing components:
+- NavBar (as mentioned before will also be present here)
+
+The `NewQuestion` page is rendered on it's own URL and is a controlled component that has its own state and will connect to the store so that the question the user asks will be properly stored and used throughout the application. 
+
+![New Question](https://github.com/tiagofsanchez/reactnd-project-would-you-rather/blob/master/src/Images/ResultApp.png?raw=true)
+
+Despite the fact that you see the form highlighted you will not find a page and component design, everything will be on the `NewQuestion` component.
+
+#### Data required
+
+Access to the store will be required for dispatching data to the store. `NewQuestion` will need to change the both `questions` and `users` slices of the store every time a user adds a new question. 
+
+### Leaderboard page
+
+Existing components
+- NavBar
+- LeaderboardCard
+
+`LeaderboardPage` page will represent, as the name mentions, the different scores of the users of the app depending on their answers. Here you will find a `LeaderboardCard` component, more for a styling decoupling. All data will be contained in the `LeaderboardPage` that will need to have access to the store.
+
+![Leaderboard](https://github.com/tiagofsanchez/reactnd-project-would-you-rather/blob/master/src/Images/LeaderboardApp.png?raw=true)
+
+I think we are all good for now... let's start to figure out what are the main actions on our app.
+
+## 3.Determine What Events Happen in the App
+
+When you open the app you, before you login, you should get users and the questions:
+
+- get **users**,
+- get **questions**
+
+During the login phase you need to set the authUser
+
+- set **authUser**
+
+When you are in the unanswered questions pane, you need to get the unanswered questions, whereas in the answered questions pane the ones that the user answered already.
+
+- get **questions** (the correct ones :)
+- get **authUser**
+
+### 4.Determine What Data Lives in the Store
+
+To be very honest, here I followed the current structure of the data. I reckon I would struggle to do this were I to start an application from scratch. 
+
+For me my store looked like this: 
+
+```js 
 import { combineReducers } from "redux";
+import { loadingBarReducer } from "react-redux-loading-bar";
 
-import tweets from "./tweets";
+import questions from "./questions";
 import users from "./users";
-import authUsers from "./authUsers";
-import { loadingBarReducer } from "react-redux-loading";
+import authUser from "./authUser";
 
 export default combineReducers({
-  tweets,
+  authUser,
+  questions,
   users,
-  authUsers,
   loadingBar: loadingBarReducer
 });
 ```
 
-Before we deep dive into the `tweets` reducer we need to create the actions that will be used by the reducer as he is changing the state of out app on the store.
+The loadingBar is keeping tabs with the needed information for me to render the loadingBar properly. 
 
-#### The tweets action creator
+## Other stuff that I have used
 
-I will not cover all the details of the action creator, however I would like to point out a couple of things. The first thing that one needs to understand is: what are the actions the user will perform on your app that will impact the store?
+During this project I have used different open source projects (that are not part of the Udacity program) to speed up my development and as such I would like to mentioned them bellow: 
 
-```js
-// actions/tweets.js
+- [Semantic Ui React](https://react.semantic-ui.com/)
+- [Emotion](https://emotion.sh/docs/introduction) 
+- [React Redux Loading Bar](https://mironov.github.io/react-redux-loading-bar/)
+- [Flaticon](https://www.flaticon.com/)
 
-export const RECEIVE_TWEETS = "RECEIVE_TWEETS";
-export const TOOGLE_TWEET = "TOOGLE_TWEET";
-export const ADD_TWEET = "ADD_TWEET";
-```
 
-You will need to receive all the tweets, toggle them when the user likes one, and add tweet every time the user publish a new tweet. Let's have a look the the first situation:
+## Final notes
 
-```js
-// actions/tweets.js
-function receiveTweets(tweets) {
-  return {
-    type: RECEIVE_TWEETS,
-    tweets
-  };
-}
-```
+I think this gives you a gist of the the thought process and tooling behind this project, hope you can use this to build your own project and as a reference guide whenever you are stuck with any issue. Feel free to reach out if you have any questions with all the above. 
 
-This is a very simple action and as you can see it returns and object with and action.type and a payload, in this case your tweets. However we need to get our tweets from our API, as well as our users and authedUser, so we will do all that on a `shared` action creator.
+See you around! 
 
-```js
-// actions/shared.js
 
-import * as API from "../utils/api";
-import { receiveUsers } from "./users";
-import { receiveTweets } from "./tweets";
-import { receivedAuth } from "./authUsers";
-// a package to show us a loading bar every time the user will be waiting on the async call
-import { showLoading, hideLoading } from "react-redux-loading";
-
-//hard coded
-export const UserID = "tylermcginnis";
-
-export function handleInitialData() {
-  return dispatch => {
-    dispatch(showLoading());
-    return API.getInitialData().then(({ tweets, users }) => {
-      dispatch(receiveUsers(users));
-      dispatch(receiveTweets(tweets));
-      dispatch(receivedAuth(UserID));
-      dispatch(hideLoading());
-    });
-  };
-}
-```
-
-Here we are handling everything together in a single action creator. So now that we have the information that we want, how is the `tweets` reducer using this action creators to update the store?
-
-#### The tweets reducer
-
-Followed by the issue that I have with the store, how the build the reducer is my biggest challenge. This is a very simple case for when I receive all the tweets.
-
-```js
-import { RECEIVE_TWEETS } from "../actions/tweets";
-
-function tweets(state = {}, action) {
-  switch (action.type) {
-    case RECEIVE_TWEETS:
-      return {
-        ...state,
-        ...action.tweets
-      };
-    ...
-```
-
-However, if you look at the ADD_TWEET action type or the TOOGLE_TWEET action type, I reckon you will understand the challenges that I am facing.
-
-### Middleware
-
-In this case we used the middleware for (1) get all the tweets and users from our API and (2) dispatch any changes that the user is doing on to our database.
-
-Bear in mind that we already integrated the middleware in our store, so the only thing that we need to do here is use the `thunk` library to make sure that my our reducers work properly and are able to dispatch an async call.
-
-```jsx
-// middleware/index.js
-
-import { applyMiddleware } from "redux";
-import thunk from "redux-thunk";
-import logger from "./logger";
-
-//The order of the middleware is critical
-export default applyMiddleware(thunk, logger);
-```
-
-Note that we also have logger so that we have a clear understanding of the actions that are being performed.
-
-### File structure
-
-Here I am not going to justify the file structure, just wanted to show you the same.
-
-![file structure](https://github.com/tiagofsanchez/reactnd-chirper-app/blob/master/Images/fileStructure.png?raw=true)
-
-Having said that, please bear in mind that there are different approaches to format your files:
-
-- "Rails-style" organization ([more here](https://github.com/reduxjs/redux/tree/master/examples/real-world))
-- "Duck-style" organization ([more here](https://www.freecodecamp.org/news/scaling-your-redux-app-with-ducks-6115955638be/))
-
-For the record, here we used the first one. Please note that, at the end of the day, the choice is yours.
-
-### Connecting the store
-
-We have done a lot, but have yet to connect our store the any component let alone to work on the UI of our application. Let's have a look how we can connect `Tweet` component to the store: enter `react-redux`:
-
-```jsx
-// components/Tweet.js
-import { connect } from "react-redux";
-import { formatTweet } from "../utils/helpers";
-{...}
-
-//here I am deconstructing the different arguments from the store
-function mapStateToProps({ authUsers, users, tweets }, { id }) {
-  const tweet = tweets[id];
-  //you will have to pass all details of the parentTweet so that you can render after
-  const parentTweet = tweet ? tweets[tweet.replyingTo] : null;
-
-  return {
-    authUsers,
-    tweet: tweet
-      ? formatTweet(tweet, users[tweet.author], authUsers, parentTweet)
-      : null
-  };
-}
-
-export default connect(mapStateToProps)(Tweet);
-```
-
-As you can see, we had to work on the data structure a little bit (with the help of formatTweet), but the main point here is that you are able to connect the component to the store and pass the `state` as `props` on this component.
-
-### Dispatching actions
-
-The user could interact with the UI and we will need to capture that and as a result change the state of our app in case the user liked the tweet. Let's see how that was done:
-
-```js
-// components/Tweet.js
-
-import { handleToogleTweet } from "../actions/tweets";
-
-handleLike = e => {
-  e.preventDefault();
-  const { dispatch, tweet, authUsers } = this.props;
-
-  dispatch(
-    handleToogleTweet({
-      id: tweet.id,
-      hasLiked: tweet.hasLiked,
-      authUsers
-    })
-  );
-};
-```
-
-## Conclusion
-
-It is very interesting to note that, as I am going through this, I stumble upon [redux toolkit](https://redux-toolkit.js.org/), a library that was made by the redux team and, according to them - is intended to be the standard way to write Redux logic. It was originally created to help address three common concerns about Redux:
-
-- "Configuring a Redux store is too complicated"
-- "I have to add a lot of packages to get Redux to do anything useful"
-- "Redux requires too much boilerplate code"
-
-Probably this could be a potential solution for the challenges that I was facing? As of now, I am not sure given that I haven't experimented with this package. However, one thing is clear, I am not the only one that thinks that redux can seem a little be overwhelming at the beginning.
-
-However, before I jump into a new package or library I fell that I need to better understand how to correctly set up my reducers as well as how to think about how should the store look like.

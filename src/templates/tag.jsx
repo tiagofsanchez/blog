@@ -41,7 +41,6 @@ export const pageQuery = graphql`
             category
             title
             tags
-            cover
             date
           }
         }

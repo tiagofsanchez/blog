@@ -1,6 +1,5 @@
 ---
 title: "Creating my first gatsby starter"
-cover: ""
 date: 2019-11-13
 category: "🔮 Code"
 tags:

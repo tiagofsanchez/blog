@@ -14,10 +14,10 @@ const SmallAvatar = props => {
           color: `primary`,
           mt: 4,
           borderTop: `1px solid`,
-          pt: "15px"
+          pt: "15px",
         }}
       />
-      <div sx={{ display: `flex`, alignItems: `center`, mb: 2, mt: 2 }}>
+      <div sx={{ display: `flex`, alignItems: `center`, mb: -4, mt: 2 }}>
         <img
           src={avatar.photo}
           sx={{ width: 70, height: 70, borderRadius: 999, mr: `15px` }}

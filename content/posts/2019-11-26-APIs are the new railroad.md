@@ -1,6 +1,5 @@
 ---
 title: "APIs are the new railroad"
-cover: "../images/API-railroad.png"
 date: 2019-11-26
 category: "🚀 Innovation"
 tags:

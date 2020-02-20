@@ -1,6 +1,5 @@
 ---
 title: "And I decided to start coding"
-cover: ""
 date: 2019-08-21
 category: "🔮 Code"
 tags:

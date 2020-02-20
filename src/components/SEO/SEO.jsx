@@ -8,7 +8,7 @@ class SEO extends Component {
     const { postNode, postPath, postSEO } = this.props;
     let title;
     let description;
-    let image;
+    let image = config.siteLogo; // NOTE: this is a placeholder, I need to get back here
     let postURL;
     if (postSEO) {
       const postMeta = postNode.frontmatter;
@@ -16,14 +16,15 @@ class SEO extends Component {
       description = postMeta.description
         ? postMeta.description
         : postNode.excerpt;
-      image = postMeta.cover;
+      // image = postMeta.cover;
       postURL = urljoin(config.siteUrl, config.pathPrefix, postPath);
     } else {
       title = config.siteTitle;
       description = config.siteDescription;
       image = config.siteLogo;
     }
-
+    console.log(image);
+    
     if (
       !image.match(
         `(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]`

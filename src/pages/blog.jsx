@@ -43,7 +43,6 @@ export const blogQuery = graphql`
             category
             title
             tags
-            cover
             date
           }
         }
