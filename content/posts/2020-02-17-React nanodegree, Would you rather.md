@@ -1,6 +1,5 @@
 ---
 title: "React nanodegree, Would you rather App"
-
 date: 2020-02-17
 category: "🔮 Code"
 tags:
