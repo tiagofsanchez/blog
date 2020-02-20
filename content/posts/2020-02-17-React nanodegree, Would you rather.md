@@ -11,11 +11,10 @@ publish: "yes"
 
 Wow, it has been a long time since I have posted...so here it goes, a little bit more about my React nanodegree journey!
 
-At this moment I am lost in the number of weeks, so I will stop mentioning the week number of my Udacity React nanodegree. In this post I will discuss the thinking behind the my implementation of the [would you rather app](https://reactnd-would-you-rather-project.netlify.com/).
-
 # Would you rather project
 
-There you
+At this moment I am lost in the number of weeks, so I will stop mentioning the week number of my Udacity React nanodegree. In this post I will discuss the thinking behind the my implementation of the [would you rather app](https://reactnd-would-you-rather-project.netlify.com/).
+
 
 ## The project approach
 
