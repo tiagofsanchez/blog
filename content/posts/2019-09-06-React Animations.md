@@ -2,6 +2,7 @@
 title: "React Animations"
 date: 2019-09-06
 category: "🔮 Code"
+thumbnail: ""
 tags:
   - react
   - animations

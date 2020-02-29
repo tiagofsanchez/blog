@@ -2,6 +2,7 @@
 title: "React nanodegree, week 4 and 5"
 date: 2019-12-28
 category: "🔮 Code"
+thumbnail: ""
 tags:
   - redux
   - learning

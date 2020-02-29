@@ -2,6 +2,7 @@
 title: "And I decided to start coding"
 date: 2019-08-21
 category: "🔮 Code"
+thumbnail: ""
 tags:
   - react
   - front-end

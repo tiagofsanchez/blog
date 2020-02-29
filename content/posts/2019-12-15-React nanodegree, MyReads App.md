@@ -2,6 +2,7 @@
 title: "React nanodegree, MyReads App"
 date: 2019-12-15
 category: "🔮 Code"
+thumbnail: ""
 tags:
   - react
   - learning
