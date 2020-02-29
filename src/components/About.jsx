@@ -40,12 +40,12 @@ class About extends Component {
         <Styled.p>
           Briefly describing me wouldn't be complete without uploading a picture
           of the four of us 😎! For some reason I couldn't find a nice picture
-          with the four of us, go figure!
+          with the four of us together, go figure!
         </Styled.p>
         <div sx={{ display: `flex`, m: `auto`, height: `auto` }}>
-          {edges.map(image => {
+          {edges.map((image, index) => {
             return (
-              <div sx={{ width: `300px`, height: `auto` }}>
+              <div sx={{ width: `300px`, height: `auto` }} key={index}>
                 <Img
                   fluid={image.node.childImageSharp.fluid}
                   sx={{ mx: `5px` }}
