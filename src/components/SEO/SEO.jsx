@@ -13,11 +13,16 @@ class SEO extends Component {
     let postURL;
     if (postSEO) {
       const postMeta = postNode.frontmatter;
-      image = postNode.frontmatter.thumbnail;
       ({ title } = postMeta);
       description = postMeta.description
         ? postMeta.description
         : postNode.excerpt;
+
+      postMeta.thumbnail
+        ? (image = urljoin(
+            `https://github.com/tiagofsanchez/blog/blob/master/content${postMeta.thumbnail}?raw=true`
+          ))
+        : (image = config.siteLogo);
 
       postURL = urljoin(config.siteUrl, config.pathPrefix, postPath);
     } else {
@@ -26,14 +31,13 @@ class SEO extends Component {
       image = config.siteLogo;
     }
 
-    if (
-      !image.match(
-        `(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]`
-      )
-    )
-      image = urljoin(config.siteUrl, config.pathPrefix, image);
-
-    console.log(image);
+    // NOTE: I am not sure what this is doing
+    // if (
+    //   !image.match(
+    //     `(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]`
+    //   )
+    // )
+    //   image = urljoin(config.siteUrl, image);
 
     const blogURL = urljoin(config.siteUrl, config.pathPrefix);
     const schemaOrgJSONLD = [

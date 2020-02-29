@@ -2,7 +2,7 @@
 title: "APIs are the new railroad"
 date: 2019-11-26
 category: "🚀 Innovation"
-thumbnail: "../images/API-railroad.png"
+thumbnail: "/images/API-railroad.png"
 tags:
   - api
   - digital
@@ -10,7 +10,7 @@ tags:
 publish: "yes"
 ---
 
-Anyone that’s exchanged thoughts with me knows I’m a big fan of APIs as a means to create new propositions, business models and validate products or services used by customers on a global scale.
+Anyone that exchanged thoughts with me knows I’m a big fan of APIs as a means to create new propositions, business models and validate products or services used by customers on a global scale.
 
 For me, technology is of the utmost importance in this day and age. I totally buy into Marc Andreessen's vision that "software is eating the world".
 
