@@ -27,11 +27,11 @@ export default class PostTemplate extends React.Component {
       post.category_id = config.postDefaultCategoryID;
     }
 
-    //STUFF WIP
+    //NOTE: STUFF WIP to implement edit by anyone
+    // console.log(post);
+    // console.log(editOnGithub(post));
 
-    console.log(post);
-    console.log(editOnGithub(post));
-
+    //NOTE: Need to review all of this things and how data is flowing here
     //transforming my data from post into and Array so that I can loop through it
     const postNodeWip = [];
     postNodeWip.push(postNode);
@@ -78,6 +78,7 @@ export const pageQuery = graphql`
         date
         category
         tags
+        thumbnail
       }
       fields {
         slug

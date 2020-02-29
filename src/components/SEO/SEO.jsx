@@ -6,12 +6,14 @@ import config from "../../../data/SiteConfig";
 class SEO extends Component {
   render() {
     const { postNode, postPath, postSEO } = this.props;
+
     let title;
     let description;
-    let image = config.siteLogo; // NOTE: this is a placeholder, I need to get back here
+    let image;
     let postURL;
     if (postSEO) {
       const postMeta = postNode.frontmatter;
+      image = postNode.frontmatter.thumbnail;
       ({ title } = postMeta);
       description = postMeta.description
         ? postMeta.description
@@ -30,6 +32,8 @@ class SEO extends Component {
       )
     )
       image = urljoin(config.siteUrl, config.pathPrefix, image);
+
+    console.log(image);
 
     const blogURL = urljoin(config.siteUrl, config.pathPrefix);
     const schemaOrgJSONLD = [
