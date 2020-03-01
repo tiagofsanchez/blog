@@ -2,6 +2,7 @@
 title: "How to implement a NavBar in my Gatsby blog"
 date: 2019-09-20
 category: "🔮 Code"
+thumbnail: "../thumbnails/gatsby-logo.png"
 tags:
   - blog
   - gatsby
