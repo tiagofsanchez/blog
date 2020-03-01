@@ -58,7 +58,7 @@ export default class PostTemplate extends React.Component {
           <MDXRenderer>{postNode.body}</MDXRenderer>
           <SocialLinks postPath={slug} postNode={postNode} />
           <SmallAvatar />
-          <MailListForm />
+          <MailListForm formType={"homePage"} />
         </div>
       </Layout>
     );

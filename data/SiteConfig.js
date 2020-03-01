@@ -7,7 +7,7 @@ const config = {
   pathPrefix: "/tiagofsanchez", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "A blog about react, innovation, travel and other stuff", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
-  siteFBAppID: "1825356251115265", // FB Application ID for using app insights
+  siteFBAppID: "", // FB Application ID for using app insights
   googleAnalyticsID: "UA-153307362-1", // GA tracking ID.
   disqusShortname: "", // Disqus shortname.
   postDefaultCategoryID: "Tech", // Default category for posts.

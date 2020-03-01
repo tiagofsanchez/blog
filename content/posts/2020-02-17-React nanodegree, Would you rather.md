@@ -2,6 +2,7 @@
 title: "React nanodegree, Would you rather App"
 date: 2020-02-17
 category: "🔮 Code"
+thumbnail: "../thumbnails/React-js.png"
 tags:
   - redux
   - learning

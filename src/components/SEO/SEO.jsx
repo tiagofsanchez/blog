@@ -32,7 +32,6 @@ class SEO extends Component {
       image = config.siteLogo;
     }
 
-    //TO check if will point to the correct image
     console.log(image);
 
     const blogURL = urljoin(config.siteUrl, config.pathPrefix);

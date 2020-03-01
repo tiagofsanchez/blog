@@ -8,7 +8,6 @@ import { Styled, jsx } from "theme-ui";
 class About extends Component {
   render() {
     const { edges } = this.props.data.images;
-    console.log(this.props);
     return (
       <>
         <div

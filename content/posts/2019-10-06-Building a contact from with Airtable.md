@@ -2,6 +2,7 @@
 title: "Building a contact from with Airtable"
 date: 2019-10-06
 category: "🔮 Code"
+thumbnail: "../thumbnails/airtable-logo.png"
 tags:
   - blog
   - gatsby
