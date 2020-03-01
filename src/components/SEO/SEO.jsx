@@ -31,6 +31,8 @@ class SEO extends Component {
       image = config.siteLogo;
     }
 
+    console.log(image);
+
     // NOTE: I am not sure what this is doing
     // if (
     //   !image.match(
