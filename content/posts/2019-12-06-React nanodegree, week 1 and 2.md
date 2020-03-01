@@ -2,7 +2,6 @@
 title: "React nanodegree, week 1 and 2"
 date: 2019-12-09
 category: "🔮 Code"
-thumbnail: ""
 tags:
   - react
   - learning

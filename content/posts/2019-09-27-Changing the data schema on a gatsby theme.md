@@ -2,7 +2,6 @@
 title: "Changing the data schema on a gatsby theme"
 date: 2019-09-27
 category: "🔮 Code"
-thumbnail: ""
 tags:
   - blog
   - gatsby

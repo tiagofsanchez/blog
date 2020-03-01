@@ -2,7 +2,6 @@
 title: "Creating my first gatsby starter"
 date: 2019-11-13
 category: "🔮 Code"
-thumbnail: ""
 tags:
   - blog
   - gatsby

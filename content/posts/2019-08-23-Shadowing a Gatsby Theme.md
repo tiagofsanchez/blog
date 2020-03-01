@@ -2,7 +2,6 @@
 title: "Shadowing a Gatsby Theme"
 date: 2019-08-23
 category: "🔮 Code"
-thumbnail: ""
 tags:
   - blog
   - gatsby

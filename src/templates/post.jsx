@@ -78,7 +78,13 @@ export const pageQuery = graphql`
         date
         category
         tags
-        thumbnail
+        thumbnail {
+          childImageSharp {
+            fixed(width: 150, height: 150) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
       fields {
         slug
