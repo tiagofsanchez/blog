@@ -108,14 +108,14 @@ export default {
       fontSize: 24,
       fontWeight: "bold",
       color: "primary",
-      mt: 4,
+      mt: 2,
       mb: 2
     },
     h3: {
       fontSize: 20,
       fontWeight: "bold",
       color: "primary",
-      mt: 3,
+      mt: 2,
       mb: 2
     },
     a: {

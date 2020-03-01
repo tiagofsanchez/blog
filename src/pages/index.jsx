@@ -15,7 +15,7 @@ import { Styled, jsx } from "theme-ui";
 class Index extends React.Component {
   render() {
     const postEdges = this.props.data.allMdx.edges;
-    const { userLinks } = config;
+    console.log(this.props);
 
     return (
       <Layout>
@@ -85,6 +85,13 @@ export const pageQuery = graphql`
             title
             tags
             date
+            thumbnail {
+              childImageSharp {
+                fixed(width: 30, height: 30) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
         }
       }
