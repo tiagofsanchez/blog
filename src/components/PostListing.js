@@ -1,9 +1,11 @@
-/** @jsx jsx */
-import { Styled, jsx } from 'theme-ui';
 import React, { Fragment } from "react";
+import Img from "gatsby-image";
 import { Link } from "gatsby";
-import PostHeader from './PostHeader';
 
+/** @jsx jsx */
+import { Styled, jsx, Flex } from "theme-ui";
+
+import PostHeader from "./PostHeader";
 
 class PostListing extends React.Component {
   getPostList() {
@@ -17,37 +19,52 @@ class PostListing extends React.Component {
         date: postEdge.node.fields.date,
         excerpt: postEdge.node.excerpt,
         timeToRead: postEdge.node.timeToRead,
-        category: postEdge.node.frontmatter.category
+        category: postEdge.node.frontmatter.category,
+        thumbnail: postEdge.node.frontmatter.thumbnail
       });
     });
     return postList;
   }
 
-
   render() {
-
     const postList = this.getPostList();
- 
+
     return (
       <div>
-        {/* Your post list here. */
-          postList.map(post => (
+        {postList.map(post => {
+          let thumbnail = null;
+          if (post.thumbnail) {
+            thumbnail = post.thumbnail.childImageSharp.fixed;
+          }
+          return (
             <Styled key={post.title} sx={{ mb: "40px" }}>
-              <Styled.h1 sx={{ mb: `-0.1px` }}>
-                <Styled.a
-                  as={Link}
-                  to={post.path}
-                  sx={{ textDecoration: `none` }}
-                >
-                  {post.title}
-                </Styled.a>
-              </Styled.h1>
+              <Flex sx={{ flexWrap: `wrap`, alignItems: `center` }}>
+                {thumbnail ? (
+                  <Img
+                    fixed={thumbnail}
+                    alt="thumbnail"
+                    sx={{
+                      borderRadius: `5px`,
+                      marginRight: `10px`,
+                      flex: `0 1 50px`
+                    }}
+                  />
+                ) : null}
+                <Styled.h1 sx={{ mb: `-0.1px`, mt: 0 }}>
+                  <Styled.a
+                    as={Link}
+                    to={post.path}
+                    sx={{ textDecoration: `none` }}
+                  >
+                    {post.title}
+                  </Styled.a>
+                </Styled.h1>
+              </Flex>
               <PostHeader post={post} />
-              <Styled.p sx={{mt:-1}}>
-                {post.excerpt}
-              </Styled.p>
+              <Styled.p sx={{ mt: -1 }}>{post.excerpt}</Styled.p>
             </Styled>
-          ))}
+          );
+        })}
       </div>
     );
   }

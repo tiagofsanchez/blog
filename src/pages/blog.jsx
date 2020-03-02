@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
+
 import Layout from "../layout";
 import PostListing from "../components/PostListing";
 import SEO from "../components/SEO/SEO";
@@ -10,6 +11,7 @@ import AvatarLinks from "../components/Avatar/AvatarLinks";
 class Blog extends React.Component {
   render() {
     const postEdges = this.props.data.allMdx.edges;
+
     return (
       <Layout>
         <Helmet title={config.siteTitle} />
@@ -44,6 +46,13 @@ export const blogQuery = graphql`
             title
             tags
             date
+            thumbnail {
+              childImageSharp {
+                fixed(width: 50, height: 50) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
         }
       }
