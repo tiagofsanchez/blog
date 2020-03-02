@@ -1,8 +1,10 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
+import Img from "gatsby-image";
+
 /** @jsx jsx */
-import { Styled, jsx } from "theme-ui";
+import { Styled, jsx, Flex } from "theme-ui";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 
 import Layout from "../layout";
@@ -46,6 +48,13 @@ export default class PostTemplate extends React.Component {
       });
     });
 
+    let thumbnail = null;
+    if (post.thumbnail) {
+      thumbnail = post.thumbnail.childImageSharp.fixed;
+    }
+
+    console.log(post);
+
     return (
       <Layout>
         <Helmet>
@@ -53,8 +62,24 @@ export default class PostTemplate extends React.Component {
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
         <div>
-          <Styled.h1 sx={{ mb: 0, fontSize: 60 }}>{post.title}</Styled.h1>
-          <PostHeader post={postWip[0]} />
+          <Flex sx={{ alignItems: `center`, flexWrap: `wrap` }}>
+            {thumbnail ? (
+              <Img
+                fixed={thumbnail}
+                alt="thumbnail"
+                sx={{
+                  borderRadius: `5px`,
+                  marginRight: `20px`,
+                  flex: `0 1 90px`
+                }}
+              />
+            ) : null}
+            <div>
+              <Styled.h1 sx={{ mb: 0, mt: 0 }}>{post.title}</Styled.h1>
+              <PostHeader post={postWip[0]} />
+            </div>
+          </Flex>
+
           <MDXRenderer>{postNode.body}</MDXRenderer>
           <SocialLinks postPath={slug} postNode={postNode} />
           <SmallAvatar />
@@ -80,7 +105,7 @@ export const pageQuery = graphql`
         tags
         thumbnail {
           childImageSharp {
-            fixed(width: 150, height: 150) {
+            fixed(width: 90, height: 90) {
               ...GatsbyImageSharpFixed
             }
           }
