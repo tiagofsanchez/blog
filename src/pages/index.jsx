@@ -15,7 +15,6 @@ import { Styled, jsx } from "theme-ui";
 class Index extends React.Component {
   render() {
     const postEdges = this.props.data.allMdx.edges;
-    console.log(this.props);
 
     return (
       <Layout>
