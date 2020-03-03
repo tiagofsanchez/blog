@@ -63,9 +63,7 @@ class PostListing extends React.Component {
                       }}
                     />
                   ) : null}
-                  <Styled.h1 sx={{ mb: `-0.1px`, mt: 0 }}>
-                    {post.title}
-                  </Styled.h1>
+                  <Styled.h1 sx={{ mt: 0 }}>{post.title}</Styled.h1>
                 </Flex>
                 <PostHeader post={post} />
                 <Styled.p sx={{ mt: -1, color: `text` }}>
