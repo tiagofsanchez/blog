@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
 import PostListing from "../components/PostListing";
-import CatHeader from "../components/CatHeader";
+import CatTagHeader from "../components/CatTagHeader";
 import config from "../../data/SiteConfig";
 
 export default class CategoryTemplate extends React.Component {
@@ -15,7 +15,7 @@ export default class CategoryTemplate extends React.Component {
         <Helmet
           title={`Posts in category "${category}" | ${config.siteTitle}`}
         />
-        <CatHeader category={category} />
+        <CatTagHeader category={category} />
         <PostListing postEdges={postEdges} />
       </Layout>
     );

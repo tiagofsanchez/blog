@@ -5,6 +5,7 @@
   "author": "Tiago Sanchez <tiagofsanchezk@gmail.com>",
   "dependencies": {
     "@emotion/core": "^10.0.21",
+    "@emotion/styled": "^10.0.27",
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
     "@theme-ui/prism": "^0.2.46",
