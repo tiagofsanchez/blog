@@ -7,7 +7,7 @@ import PostTages from "./PostTags";
 import { Styled, jsx } from "theme-ui";
 
 const PostHeader = props => {
-  const { post } = props;
+  const { post, noDate } = props;
 
   return (
     <div sx={{ mb: `-1px` }}>
@@ -15,7 +15,8 @@ const PostHeader = props => {
         sx={{ display: `flex`, flexDirection: `column`, color: "secondary" }}
       >
         <small>
-          {post.date} / {post.timeToRead} minute(s) reading time
+          {noDate ? null : `${post.date} / `}
+          {post.timeToRead} minute(s) reading time
         </small>
         <div
           sx={{

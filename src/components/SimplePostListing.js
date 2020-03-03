@@ -3,6 +3,7 @@ import { Styled, jsx, Flex } from "theme-ui";
 import React, { Fragment } from "react";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
+import moment from "moment";
 import PostHeader from "./PostHeader";
 
 class PostListing extends React.Component {
@@ -32,6 +33,9 @@ class PostListing extends React.Component {
           if (post.thumbnail) {
             thumbnail = post.thumbnail.childImageSharp.fixed;
           }
+
+          const newest = moment(post.date) > moment().subtract(1, "months");
+
           return (
             <Fragment key={post.title}>
               <Styled.a
@@ -43,6 +47,7 @@ class PostListing extends React.Component {
                   sx={{
                     alignItems: `center`,
                     padding: `10px`,
+                    width: `100%`,
                     ":hover": {
                       borderRadius: `10px`,
                       boxShadow: "0 0 1px 2px rgba(0, 0, 0, .125)",
@@ -56,13 +61,32 @@ class PostListing extends React.Component {
                       alt="thumbnail"
                       sx={{ borderRadius: `5px`, marginRight: `15px` }}
                     />
-                  ) : (
-                    <div />
-                  )}
-                  <Styled>
-                    <Styled.h2>{post.title}</Styled.h2>
-                    <PostHeader post={post} />
-                  </Styled>
+                  ) : null}
+
+                  <Flex
+                    sx={{
+                      width: `100%`,
+                      alignItems: `center`,
+                      justifyContent: `space-between`
+                    }}
+                  >
+                    <div>
+                      <Styled.h2>{post.title}</Styled.h2>
+                      <PostHeader post={post} noDate />
+                    </div>
+                    {newest ? (
+                      <Styled
+                        sx={{
+                          mr: 20,
+                          bg: `muted`,
+                          p: `5px 10px 5px 10px`,
+                          borderRadius: 4
+                        }}
+                      >
+                        New
+                      </Styled>
+                    ) : null}
+                  </Flex>
                 </Flex>
               </Styled.a>
             </Fragment>

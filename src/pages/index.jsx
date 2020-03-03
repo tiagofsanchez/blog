@@ -75,7 +75,7 @@ export const pageQuery = graphql`
         node {
           fields {
             slug
-            date(formatString: "MMMM Do, YYYY")
+            date
           }
           excerpt
           timeToRead
