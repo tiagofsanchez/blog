@@ -46,6 +46,13 @@ export const pageQuery = graphql`
             title
             tags
             date
+            thumbnail {
+              childImageSharp {
+                fixed(width: 40, height: 40) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
         }
       }

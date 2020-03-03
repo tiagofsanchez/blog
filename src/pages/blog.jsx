@@ -48,7 +48,7 @@ export const blogQuery = graphql`
             date
             thumbnail {
               childImageSharp {
-                fixed(width: 50, height: 50) {
+                fixed(width: 40, height: 40) {
                   ...GatsbyImageSharpFixed
                 }
               }

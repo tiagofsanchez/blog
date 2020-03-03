@@ -44,9 +44,9 @@ class PostListing extends React.Component {
                     fixed={thumbnail}
                     alt="thumbnail"
                     sx={{
-                      borderRadius: `5px`,
+                      borderRadius: `2px`,
                       marginRight: `10px`,
-                      flex: `0 1 50px`
+                      flex: `0 1 40px`
                     }}
                   />
                 ) : null}

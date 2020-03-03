@@ -33,7 +33,7 @@ export const pageQuery = graphql`
         node {
           fields {
             slug
-            date (formatString: "MMMM Do, YYYY")
+            date(formatString: "MMMM Do, YYYY")
           }
           excerpt
           timeToRead
@@ -42,6 +42,13 @@ export const pageQuery = graphql`
             title
             tags
             date
+            thumbnail {
+              childImageSharp {
+                fixed(width: 40, height: 40) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
         }
       }
