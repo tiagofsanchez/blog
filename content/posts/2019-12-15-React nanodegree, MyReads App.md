@@ -10,17 +10,13 @@ tags:
 publish: "yes"
 ---
 
-With 3 weeks in the course now, I have just finalized Project #1: **MyReads**, A Book Leanding App. Found the project really interesting with a couple of great problems to solve.
+Three weeks in the course now and I have just finalized Project #1: **MyReads**, a Book Leanding App. A really interesting project with a couple of great problems to solve.
 
-In this post I will try to walk you through what, in my perspective, were the most challenging technical problems that I have faced.
-
-Please bear in mind that this is definitely not the best implementation, rather my take on the project.
-
-If you need any help, just hit me up via email.
+In this post I will try to walk you through what, in my perspective, were the most challenging technical problems I have faced. Please bear in mind that this is definitely not the best implementation, rather my take on the project.
 
 # MyReads Project
 
-You can have access to my code on my [Repo](https://github.com/tiagofsanchez/reactnd-project-myreads-starter).
+You can have access to the code on my [Repo](https://github.com/tiagofsanchez/reactnd-project-myreads-starter).
 To get started and test my project:
 
 - install project dependencies with npm install
@@ -28,11 +24,11 @@ To get started and test my project:
 
 ## The App
 
-With a BookApp that stores my books on different shelf's:
+This is a very simple App you will find a Book View that stores my books on different shelf's.
 
 ![Book App](https://github.com/tiagofsanchez/reactnd-project-myreads-starter/blob/master/src/images/bookApp.png?raw=true)
 
-And a search page where the user can search for new books:
+And a search page where the user can search for new books.
 
 ![Search Page](https://github.com/tiagofsanchez/reactnd-project-myreads-starter/blob/master/src/images/searchBooks.png?raw=true)
 
@@ -83,7 +79,7 @@ class BooksApp extends React.Component {
 
 With the `console.log(this.state)` I can check that `render()` gets mounted first and it will return an empty `state`, after you will have the `componentDidMount()` that will fetch all the data from the API and push that into the `state` of my `App.js`.
 
-As a result of this, every time that you pass `state` into their children, you will have to make sure that the state exists and the children component can use it. If, for example you are using `books` in a children component you have to make sure that `books` is not empty.
+As a result of this, every time that you pass `state` into a children component, you will have to make sure that the state exists and the children component can use it. If, for example you are using `books` in a children component you have to make sure that `books` is not empty.
 
 ```js
 {books && books.map((book) => {...})}
