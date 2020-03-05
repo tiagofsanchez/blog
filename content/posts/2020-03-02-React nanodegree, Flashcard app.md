@@ -5,7 +5,7 @@ category: "🔮 Code"
 thumbnail: "../thumbnails/react-native-logo.png"
 tags:
   - redux
-  - native
+  - react native
   - udacity
 publish: "yes"
 ---
