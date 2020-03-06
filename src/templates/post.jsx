@@ -53,6 +53,8 @@ export default class PostTemplate extends React.Component {
       thumbnail = post.thumbnail.childImageSharp.fixed;
     }
 
+    console.log(thumbnail);
+
     return (
       <Layout>
         <Helmet>
