@@ -17,14 +17,12 @@ I will try to explain my key learnings from going through it! But first here are
 
 ### Resources:
 
-> - My Git [repo](https://github.com/tiagofsanchez/ReactAnimation) for this
-
+- My Git [repo](https://github.com/tiagofsanchez/ReactAnimation) for this
 - [React Transition Group](https://github.com/reactjs/react-transition-group)
 
 Alternatives:
 
-> - [React Motion](https://github.com/chenglou/react-motion)
-
+- [React Motion](https://github.com/chenglou/react-motion)
 - [React Move](https://react-move.js.org/#/)
 - [React Router Transition](https://github.com/maisano/react-router-transition)
 
