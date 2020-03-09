@@ -13,7 +13,7 @@ import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import SmallAvatar from "../components/Avatar/SmallAvatar";
-import { editOnGithub } from "../utils/global";
+// import { editOnGithub } from "../utils/global";
 import MailListForm from "../../src/components/Form/mailListForm.js";
 
 export default class PostTemplate extends React.Component {
@@ -52,8 +52,6 @@ export default class PostTemplate extends React.Component {
     if (post.thumbnail) {
       thumbnail = post.thumbnail.childImageSharp.fixed;
     }
-
-    console.log(thumbnail);
 
     return (
       <Layout>

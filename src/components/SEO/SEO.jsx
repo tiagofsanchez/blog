@@ -35,6 +35,7 @@ class SEO extends Component {
     console.log(image);
 
     const blogURL = urljoin(config.siteUrl, config.pathPrefix);
+
     const schemaOrgJSONLD = [
       {
         "@context": "http://schema.org",
@@ -89,7 +90,7 @@ class SEO extends Component {
 
         {/* OpenGraph tags */}
         <meta property="og:url" content={postSEO ? postURL : blogURL} />
-        {postSEO ? <meta property="og:type" content="article" /> : null}
+        {postSEO && <meta property="og:type" content="article" />}
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
