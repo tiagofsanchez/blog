@@ -1,10 +1,33 @@
 import React from "react";
-import ToogleMode from "./ToogleMode";
 import { Link } from "gatsby";
+
+import ToogleMode from "./ToogleMode";
+import ButtonMenu from "./ButtonMenu";
 import siteConfig from "../../data/SiteConfig";
 
 /** @jsx jsx */
 import { Styled, jsx } from "theme-ui";
+import styled from "@emotion/styled";
+
+const NavContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 15px;
+  padding: 0 20px 0 20px;
+  @media (max-width: 400px) {
+    justify-content: center;
+  }
+`;
+
+const NavLinks = styled.div`
+  display: flex;
+  align-items: flex-start;
+  @media (max-width: 400px) {
+    display: none;
+  }
+`;
 
 class NavMenu extends React.Component {
   state = {
@@ -38,57 +61,51 @@ class NavMenu extends React.Component {
     }
 
     return (
-      <nav>
-        <Styled
-          sx={{
-            position: `fixed`,
-            width: "100%",
-            top: 0,
-            left: 0,
-            height: `60px`,
-            backgroundColor: `background`,
-            boxShadow: shadow,
-            m: `auto`,
-            zIndex: 100
-          }}
-        >
-          <div
+      <>
+        <nav>
+          <Styled
             sx={{
-              display: `flex`,
-              justifyContent: `space-between`,
-              alignItems: `center`,
-              maxWidth: `container`,
-              m: "auto",
-              mt:'15px',
-              px: 3
+              position: `fixed`,
+              width: "100%",
+              top: 0,
+              left: 0,
+              height: `60px`,
+              backgroundColor: `background`,
+              boxShadow: shadow,
+              m: `auto`,
+              zIndex: 100
             }}
           >
-            <Link to="/" sx={{ textDecoration: `none` }}>
-              <Styled.h3 sx={{ my: 0 }}>{siteTitle}</Styled.h3>
-            </Link>
-            <div style={{ display: `flex`, alignItems: `center` }}>
-              {menuLinks.map(link => {
-                return (
-                  <Styled.h3
-                    key={link.url}
-                    as={Link}
-                    to={link.url}
-                    sx={{
-                      mr: `5px`,
-                      my: 0,
-                      textDecoration: `none`,
-                      color: `primary`
-                    }}
-                  >
-                    {link.name}
-                  </Styled.h3>
-                );
-              })}
-              <ToogleMode />
-            </div>
-          </div>
-        </Styled>
-      </nav>
+            <NavContainer sx={{ maxWidth: `container` }}>
+              <Link to="/" sx={{ textDecoration: `none` }}>
+                <Styled.h3 sx={{ my: 0 }}>{siteTitle}</Styled.h3>
+              </Link>
+              <NavLinks>
+                {menuLinks.map(link => {
+                  return (
+                    <Styled.h3
+                      key={link.url}
+                      as={Link}
+                      to={link.url}
+                      activeStyle={{ borderBottom: "3px solid #CCCCCC" }}
+                      sx={{
+                        mr: `15px`,
+                        my: 0,
+                        textDecoration: `none`,
+                        color: `primary`
+                      }}
+                    >
+                      {link.name}
+                    </Styled.h3>
+                  );
+                })}
+                <ToogleMode />
+              </NavLinks>
+            </NavContainer>
+          </Styled>
+          <ButtonMenu />
+        </nav>
+      </>
     );
   }
 }
