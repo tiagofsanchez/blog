@@ -9,6 +9,20 @@ import siteConfig from "../../data/SiteConfig";
 import { Styled, jsx } from "theme-ui";
 import styled from "@emotion/styled";
 
+const MenuPopUp = styled.div`
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 150px;
+  width: 100%;
+  border-top: solid 1px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  @media (min-width: 400px) {
+    display: none;
+  }
+`;
+
 const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -29,9 +43,17 @@ const NavLinks = styled.div`
   }
 `;
 
+const NavLinksMenu = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: flex-start;
+`;
+
 class NavMenu extends React.Component {
   state = {
-    scrolled: false
+    scrolled: false,
+    showMenu: false
   };
 
   componentDidMount() {
@@ -50,10 +72,19 @@ class NavMenu extends React.Component {
     }
   };
 
+  menuhandler = () => {
+    this.setState(prevState => ({
+      ...prevState,
+      showMenu: !prevState.showMenu
+    }));
+  };
+
   render() {
-    const { scrolled } = this.state;
+    const { scrolled, showMenu } = this.state;
     const { menuLinks } = this.props;
     const { siteTitle } = siteConfig;
+
+    console.log(this.state);
 
     let shadow = `none`;
     if (scrolled === true) {
@@ -103,7 +134,47 @@ class NavMenu extends React.Component {
               </NavLinks>
             </NavContainer>
           </Styled>
-          <ButtonMenu />
+          <ButtonMenu
+            onClick={() => {
+              this.menuhandler();
+            }}
+          />
+          {showMenu ? (
+            <MenuPopUp
+              sx={{
+                zIndex: 100,
+                borderColor: `primary`,
+                backgroundColor: `background`,
+                boxShadow: shadow
+              }}
+            >
+              <NavLinksMenu>
+                {menuLinks.map(link => {
+                  return (
+                    <Styled.h2
+                      key={link.url}
+                      as={Link}
+                      to={link.url}
+                      activeStyle={{
+                        borderBottom: "3px solid #CCCCCC",
+                        display: `inline-block`
+                      }}
+                      sx={{
+                        mx: `15px`,
+                        my: 0,
+                        textDecoration: `none`,
+                        color: `primary`,
+                        display: `inline-block`
+                      }}
+                    >
+                      {link.name}
+                    </Styled.h2>
+                  );
+                })}
+                <ToogleMode />
+              </NavLinksMenu>
+            </MenuPopUp>
+          ) : null}
         </nav>
       </>
     );

@@ -6,7 +6,6 @@ import styled from "@emotion/styled";
 
 const Button = styled.button`
   position: fixed;
-  border: #cccccc 2px solid;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -19,7 +18,15 @@ const Button = styled.button`
 `;
 
 const ButtonMenu = props => {
-  return <Button sx={{ backgroundColor: `primary` }}></Button>;
+  return (
+    <Button
+      sx={{
+        backgroundColor: `primary`,
+        zIndex: 103
+      }}
+      {...props}
+    ></Button>
+  );
 };
 
 export default ButtonMenu;
