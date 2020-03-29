@@ -1,9 +1,25 @@
 import React from "react";
 import Img from "gatsby-image";
 import { Link } from "gatsby";
-
 /** @jsx jsx */
-import { Styled, jsx, Flex } from "theme-ui";
+import { Styled, jsx } from "theme-ui";
+import styled from "@emotion/styled"; 
+
+const ThumbnailContainer = styled.div`
+width: 40px; 
+margin-right: 10px;
+flex: 0 0 40px;
+`
+const Flex = styled.div`
+display: flex;
+align-items: center;
+@media (max-width: 420px) {
+  flex-direction: column;
+  align-items: center;
+  text-align: center; 
+}
+`
+
 
 import PostHeader from "./PostHeader";
 
@@ -31,7 +47,7 @@ class PostListing extends React.Component {
         {postList.map(post => {
           let thumbnail = null;
           if (post.thumbnail) {
-            thumbnail = post.thumbnail.childImageSharp.fixed;
+            thumbnail = post.thumbnail.childImageSharp.fluid;
           }
           return (
             <Styled
@@ -51,17 +67,14 @@ class PostListing extends React.Component {
                 to={post.path}
                 sx={{ textDecoration: `none` }}
               >
-                <Flex sx={{ flexWrap: `wrap`, alignItems: `center` }}>
+                <Flex >
                   {thumbnail ? (
+                    <ThumbnailContainer>
                     <Img
-                      fixed={thumbnail}
+                      fluid={thumbnail}
                       alt="thumbnail"
-                      sx={{
-                        borderRadius: `4px`,
-                        marginRight: `10px`,
-                        flex: `0 1 40px`
-                      }}
                     />
+                    </ThumbnailContainer>
                   ) : null}
                   <Styled.h1 sx={{ mt: 0 }}>{post.title}</Styled.h1>
                 </Flex>
