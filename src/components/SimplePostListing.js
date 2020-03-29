@@ -5,6 +5,12 @@ import { Link } from "gatsby";
 import Img from "gatsby-image";
 import moment from "moment";
 import PostHeader from "./PostHeader";
+import styled from "@emotion/styled"
+
+const ThumbnailContainer = styled.div`
+width: 40px; 
+margin-right: 10px;
+`
 
 class PostListing extends React.Component {
   getPostList() {
@@ -31,7 +37,7 @@ class PostListing extends React.Component {
         {postList.map(post => {
           let thumbnail;
           if (post.thumbnail) {
-            thumbnail = post.thumbnail.childImageSharp.fixed;
+            thumbnail = post.thumbnail.childImageSharp.fluid;
           }
 
           const newest = moment(post.date) > moment().subtract(1, "months");
@@ -56,11 +62,13 @@ class PostListing extends React.Component {
                   }}
                 >
                   {thumbnail ? (
+                    <ThumbnailContainer>
                     <Img
-                      fixed={thumbnail}
+                      fluid={thumbnail}
                       alt="thumbnail"
-                      sx={{ borderRadius: `5px`, marginRight: `15px` }}
+                     
                     />
+                    </ThumbnailContainer>
                   ) : null}
 
                   <Flex
