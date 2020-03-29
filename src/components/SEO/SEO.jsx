@@ -22,7 +22,7 @@ class SEO extends Component {
       postMeta.thumbnail
         ? (image = urljoin(
             config.siteUrl,
-            postMeta.thumbnail.childImageSharp.fixed.src
+            postMeta.thumbnail.childImageSharp.fluid.src
           ))
         : (image = config.siteLogo);
 
