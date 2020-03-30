@@ -22,7 +22,7 @@ class SEO extends Component {
       postMeta.thumbnail
         ? (image = urljoin(
             config.siteUrl,
-            postMeta.thumbnail.childImageSharp.fluid.src
+            postMeta.thumbnail.publicURL
           ))
         : (image = config.siteLogo);
 
@@ -32,6 +32,8 @@ class SEO extends Component {
       description = config.siteDescription;
       image =  config.siteLogo;
     }
+    
+    console.log(image);
     
 
     const blogURL = urljoin(config.siteUrl, config.pathPrefix);

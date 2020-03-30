@@ -40,7 +40,6 @@ const config = {
       url: "mailto:tiagofsanchez@gmail.com"
     }
   ],
-
   menuLinks: [
     {
       name: "Me",
@@ -51,8 +50,28 @@ const config = {
       url: "/blog"
     }
   ],
-  copyright: "Copyright © 2019. tfs", // Copyright string for the footer of the website and RSS feed.
-  themeColor: "#c62828", // Used for setting manifest and progress theme colors.
+  projects: [
+    {
+      name: "crushingwfh",
+      description: "All the tools to enable anyone working from home faster",
+      image: "chrushingwfh.png",
+      link: "https://crushingwfh.com/"
+    },
+    {
+      name: "would you rather",
+      description: "A milestone project from Udacity React nanodegree",
+      image: "would-you-rather.png",
+      link: "https://reactnd-would-you-rather-project.netlify.com/"
+    },
+    {
+      name: "gatsby-tfs-starter",
+      description: "A gatsby blog starter based on this blog",
+      image: "gatsby-tfs-starter.png",
+      link: "https://www.gatsbyjs.org/starters/tiagofsanchez/gatsby-tfs-starter/"
+    }
+  ],
+  copyright: "Copyright © 2020. tfs", // Copyright string for the footer of the website and RSS feed.
+  themeColor: "#d23669", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0" // Used for setting manifest background color.
 };
 

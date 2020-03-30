@@ -24,7 +24,7 @@ const AboutPage = props => {
 
 export default AboutPage;
 
-//this query will get me all the images in that folder
+//this query will get me all the images in the folder that I want
 export const query = graphql`
   {
     images: allFile(

@@ -43,6 +43,7 @@ export const pageQuery = graphql`
             tags
             date
             thumbnail {
+              publicURL
               childImageSharp {
                 fluid {
                   ...GatsbyImageSharpFluid

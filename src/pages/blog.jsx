@@ -46,7 +46,9 @@ export const blogQuery = graphql`
             title
             tags
             date
+         
             thumbnail {
+              publicURL
               childImageSharp {
                 fluid {
                   ...GatsbyImageSharpFluid

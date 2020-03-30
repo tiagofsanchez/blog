@@ -8,6 +8,8 @@ import BigAvatar from "../components/Avatar/BigAvatar";
 import config from "../../data/SiteConfig";
 import AllCategories from "../components/AllCategories";
 import MailListForm from "../components/Form/mailListForm";
+import Projects from '../components/projects';
+
 
 /** @jsx jsx */
 import { Styled, jsx } from "theme-ui";
@@ -29,30 +31,35 @@ class Index extends React.Component {
         </section>
         <section sx={{ my: `40px` }}>
           <Styled.h1>Check out my latest posts</Styled.h1>
+          <div sx={{marginBottom: `10px`}}>
           <SimplePostListing postEdges={postEdges} />
-        </section>
-        <section>
+          </div>
           <Styled
             as={Link}
             to={"/blog"}
             sx={{
-              margin: `auto`,
-              textAlign: `center`,
-              color: `primary`,
-              borderBottom: `solid 3px`,
+              bg: `muted`,
+              color: `text`,
               textDecoration: `none`,
               fontSize: 26,
+              borderRadius: `5px`,
+              p: `5px`, 
               ":hover": {
-                bg: `muted`,
+                bg: `primary`,
                 p: 1,
-                borderRadius: `5px`
+                color: `black`
+  
               }
             }}
           >
-            More posts...
+            More posts&#8594;
           </Styled>
         </section>
-
+         
+      
+        <section>
+          <Projects />
+          </section>    
         <section>
           <MailListForm formType={"homePage"} />
         </section>
@@ -85,6 +92,7 @@ export const pageQuery = graphql`
             tags
             date
             thumbnail {
+              publicURL
               childImageSharp {
                 fluid {
                   ...GatsbyImageSharpFluid

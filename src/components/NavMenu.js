@@ -57,6 +57,7 @@ margin-right: 5px;
 `
 const Flex = styled.div`
 display: flex;
+align-items: justify; 
 `
 
 
