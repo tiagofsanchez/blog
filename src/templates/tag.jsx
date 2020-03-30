@@ -12,7 +12,7 @@ export default class TagTemplate extends React.Component {
     const postEdges = this.props.data.allMdx.edges;
     return (
       <Layout>
-        <Helmet title={`Posts tagged as "${tag}" | ${config.siteTitle}`} />
+        <Helmet title={`${config.siteTitle} | Posts tagged as "${tag}"`} />
         <CatTagHeader tag={tag} />
         <PostListing postEdges={postEdges} />
       </Layout>
