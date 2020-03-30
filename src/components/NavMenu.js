@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import ToogleMode from "./ToogleMode";
 import ButtonMenu from "./ButtonMenu";
 import siteConfig from "../../data/SiteConfig";
+import Logo from "../components/logo";
 
 /** @jsx jsx */
 import { Styled, jsx } from "theme-ui";
@@ -50,6 +51,15 @@ const NavLinksMenu = styled.div`
   align-items: flex-start;
 `;
 
+const LogoContainer = styled.div`
+width: 20px;
+margin-right: 5px;   
+`
+const Flex = styled.div`
+display: flex;
+`
+
+
 class NavMenu extends React.Component {
   state = {
     scrolled: false,
@@ -84,7 +94,6 @@ class NavMenu extends React.Component {
     const { menuLinks } = this.props;
     const { siteTitle } = siteConfig;
 
-    console.log(this.state);
 
     let shadow = `none`;
     if (scrolled === true) {
@@ -109,7 +118,12 @@ class NavMenu extends React.Component {
           >
             <NavContainer sx={{ maxWidth: `container` }}>
               <Link to="/" sx={{ textDecoration: `none` }}>
-                <Styled.h3 sx={{ my: 0 }}>{siteTitle}</Styled.h3>
+                <Flex>
+                  <LogoContainer>
+                    <Logo />
+                  </LogoContainer>
+                  <Styled.h3 sx={{ my: 0 }}>{siteTitle}</Styled.h3>
+                </Flex>
               </Link>
               <NavLinks>
                 {menuLinks.map(link => {

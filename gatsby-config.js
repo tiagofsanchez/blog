@@ -13,7 +13,7 @@ module.exports = {
       image_url: `${urljoin(
         config.siteUrl,
         config.pathPrefix
-      )}/src/images/logo.png`,
+      )}/thumbnails/logo.png`,
       copyright: config.copyright
     }
   },
@@ -93,7 +93,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: `standalone`,
-        icon: `./src/images/logo.png`
+        icon: `./content/thumbnails/logo.png`
       }
     },
     {

@@ -30,10 +30,9 @@ class SEO extends Component {
     } else {
       title = config.siteTitle;
       description = config.siteDescription;
-      image = config.siteLogo;
+      image =  config.siteLogo;
     }
-
-    console.log(image);
+    
 
     const blogURL = urljoin(config.siteUrl, config.pathPrefix);
     const schemaOrgJSONLD = [
