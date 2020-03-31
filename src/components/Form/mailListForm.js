@@ -120,7 +120,7 @@ class mailListForm extends React.Component {
         sx={{
           border: `1px solid pink`,
           px: 2,
-          my: `80px`,
+          boxShadow: `1px 2px 10px rgba(0, 0, 0, 0.5)`,
           borderRadius: `10px`,
           textAlign: `center`,
           fontSize: `13px`

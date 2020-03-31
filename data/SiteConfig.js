@@ -59,7 +59,7 @@ const config = {
     },
     {
       name: "would you rather",
-      description: "A milestone project from Udacity React nanodegree",
+      description: "A milestone project for my Udacity React nanodegree",
       image: "would-you-rather.png",
       link: "https://reactnd-would-you-rather-project.netlify.com/"
     },

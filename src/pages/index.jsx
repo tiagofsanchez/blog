@@ -8,11 +8,16 @@ import BigAvatar from "../components/Avatar/BigAvatar";
 import config from "../../data/SiteConfig";
 import AllCategories from "../components/AllCategories";
 import MailListForm from "../components/Form/mailListForm";
-import Projects from '../components/projects';
-
+import Projects from "../components/projects";
+import styled from '@emotion/styled';
 
 /** @jsx jsx */
 import { Styled, jsx } from "theme-ui";
+
+const Section = styled.section`
+margin: 0px 0px 60px 0px;
+
+`
 
 class Index extends React.Component {
   render() {
@@ -22,47 +27,43 @@ class Index extends React.Component {
       <Layout>
         <Helmet title={config.siteTitle} />
         <SEO />
-        <section>
+        <Section>
           <BigAvatar />
-        </section>
-        <section sx={{ mt: `60px` }}>
+        </Section>
+        <Section >
           <Styled.h1>I write about</Styled.h1>
           <AllCategories />
-        </section>
-        <section sx={{ my: `40px` }}>
+        </Section>
+        <Section >
           <Styled.h1>Check out my latest posts</Styled.h1>
-          <div sx={{marginBottom: `10px`}}>
-          <SimplePostListing postEdges={postEdges} />
+          <div sx={{ marginBottom: `10px` }}>
+            <SimplePostListing postEdges={postEdges} />
           </div>
           <Styled
             as={Link}
             to={"/blog"}
             sx={{
-              bg: `muted`,
-              color: `text`,
+              color: `primary`,
+        
               textDecoration: `none`,
               fontSize: 26,
               borderRadius: `5px`,
-              p: `5px`, 
+              p: `5px`,
               ":hover": {
-                bg: `primary`,
-                p: 1,
-                color: `black`
-  
+                bg: `muted`,
               }
             }}
           >
             More posts&#8594;
           </Styled>
-        </section>
-         
-      
-        <section>
+        </Section>
+        <Section>
+          <Styled.h1>Project sample</Styled.h1>
           <Projects />
-          </section>    
-        <section>
+        </Section>
+        <Section>
           <MailListForm formType={"homePage"} />
-        </section>
+        </Section>
       </Layout>
     );
   }

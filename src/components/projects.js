@@ -15,47 +15,36 @@ const Container = styled.div`
 `;
 
 const CardContainer = styled.a`
-  width: 220px;
+  width: 200px;
   height: 300px;
-  flex: 0 1 220px;
+  flex: 0 1 200px;
   display: flex;
   flex-direction: column;
   margin: 8px;
+  padding: 8px;
   border-radius: 5px;
-  text-decoration: none;  
-  &:hover { 
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
-  }
-  
+  text-decoration: none;
 `;
 const ImageContainer = styled.div`
-  width: 220px;
-
+  width: 200px;
 `;
 
 const TextContainer = styled.div`
-padding: 5px;
-display: flex; 
-flex-direction: column;
-
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
 `;
 
 const Title = styled.h2`
-width: 100%;
-margin-bottom: 0;
-text-align: center; 
-`
+  width: 100%;
+  margin-bottom: 0;
+  text-align: center;
+`;
 
 const Description = styled.p`
-text-align: center;
-margin-bottom: 0;
-`
-const Arraw = styled.p `
-align-self: flex-end;
-padding: 0px 4px 0px 4px;
-font-size: 20px;
-`
-
+  text-align: center;
+  margin-bottom: 0;
+`;
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -66,7 +55,7 @@ const Projects = () => {
         edges {
           node {
             childImageSharp {
-              fluid(maxWidth: 400, maxHeight: 250) {
+              fluid(maxWidth: 400, maxHeight: 250, grayscale: true) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -99,13 +88,25 @@ const Projects = () => {
     <Container>
       {projArray.map(proj => {
         return (
-          <CardContainer key={proj.name} href={proj.link}>
+          <CardContainer
+            key={proj.name}
+            href={proj.link}
+            sx={{
+              ":hover": {
+                borderRadius: `10px`,
+                boxShadow: "0 0 1px 2px rgba(0, 0, 0, .125)",
+                bg: "muted"
+              }
+            }}
+          >
             <ImageContainer>
               <Img fluid={proj.img} alt={proj.name} />
             </ImageContainer>
             <TextContainer>
-              <Title sx={{color: `primary`}}>{proj.name}</Title>
-              <Description sx={{color: `text`}}>{proj.description}</Description>
+              <Title sx={{ color: `primary` }}>{proj.name}</Title>
+              <Description sx={{ color: `text` }}>
+                {proj.description}
+              </Description>
             </TextContainer>
           </CardContainer>
         );

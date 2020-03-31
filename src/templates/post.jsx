@@ -3,9 +3,9 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
 /** @jsx jsx */
-import { Styled, jsx} from "theme-ui";
+import { Styled, jsx } from "theme-ui";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import styled from '@emotion/styled'
+import styled from "@emotion/styled";
 
 import Layout from "../layout";
 import PostHeader from "../components/PostHeader";
@@ -17,21 +17,24 @@ import SmallAvatar from "../components/Avatar/SmallAvatar";
 import MailListForm from "../../src/components/Form/mailListForm.js";
 
 const ThumbnailContainer = styled.div`
-width: 90px; 
-margin-right: 15px;
-flex: 0 0 90px;
-@media (max-width: 420px) { 
-  margin-bottom: 10px
-}
-`
+  width: 90px;
+  margin-right: 15px;
+  flex: 0 0 90px;
+  @media (max-width: 420px) {
+    margin-bottom: 10px;
+  }
+`;
 const Flex = styled.div`
-display: flex;
-align-items: center;
-@media (max-width: 420px) {
-  flex-direction: column;
+  display: flex;
   align-items: center;
-}
-`
+  @media (max-width: 420px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+const Section = styled.section`
+  margin: 0px 0px 60px 0px;
+`;
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -77,24 +80,25 @@ export default class PostTemplate extends React.Component {
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
         <div>
-          <Flex>
-            {thumbnail ? (
-              <ThumbnailContainer>
-              <Img
-                fluid={thumbnail}
-                alt="thumbnail"
-              />
-              </ThumbnailContainer>
-            ) : null}
-            <div>
-              <Styled.h1 sx={{ mb: 0, mt: 0 }}>{post.title}</Styled.h1>
-              <PostHeader post={postWip[0]} />
-            </div>
-          </Flex>
+          <Section>
+            <Flex>
+              {thumbnail ? (
+                <ThumbnailContainer>
+                  <Img fluid={thumbnail} alt="thumbnail" />
+                </ThumbnailContainer>
+              ) : null}
+              <div>
+                <Styled.h1 sx={{ mb: 0, mt: 0 }}>{post.title}</Styled.h1>
+                <PostHeader post={postWip[0]} />
+              </div>
+            </Flex>
 
-          <MDXRenderer>{postNode.body}</MDXRenderer>
-          <SocialLinks postPath={slug} postNode={postNode} />
-          <SmallAvatar />
+            <MDXRenderer>{postNode.body}</MDXRenderer>
+            <SocialLinks postPath={slug} postNode={postNode} />
+          </Section>
+          <Section>
+            <SmallAvatar />
+          </Section>
           <MailListForm formType={"homePage"} />
         </div>
       </Layout>
