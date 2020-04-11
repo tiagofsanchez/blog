@@ -14,7 +14,7 @@ class About extends Component {
           sx={{
             display: `flex`,
             justifyContent: `space-between`,
-            alignItems: `baseline`
+            alignItems: `baseline`,
           }}
         >
           <Styled.h1 sx={{ my: 0 }}>Me</Styled.h1>

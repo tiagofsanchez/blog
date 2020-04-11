@@ -27,7 +27,7 @@ const MenuPopUp = styled.div`
 const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: auto;
   margin-top: 15px;
   padding: 0 20px 0 20px;

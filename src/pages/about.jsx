@@ -17,6 +17,7 @@ const AboutPage = props => {
       <Helmet title={`About | ${config.siteTitle}`} />
       <Seo />
       <About data={data} />
+      <div style={{marginBottom: `40px`}}></div>
       <MailListForm formType={"homePage"} />
     </Layout>
   );
