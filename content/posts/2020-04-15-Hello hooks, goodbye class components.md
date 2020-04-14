@@ -1,6 +1,6 @@
 ---
 title: "Hello hooks, goodbye class components"
-date: 2020-04-11
+date: 2020-04-15
 category: "🔮 Code"
 thumbnail: "../thumbnails/hooks.png"
 tags:
