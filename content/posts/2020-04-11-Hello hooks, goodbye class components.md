@@ -411,7 +411,7 @@ If you have a form, you need to store the information somewhere. Here you will f
 
 You can use the list of [commits](https://github.com/tiagofsanchez/hooks-examples/commits/master) to follow through. In this case, use *connect both forms to airtable* for this piece. Please bear in mind that the commit order is not exactly the same as the post order, e.g. I have connected the form to Airtable before going through the side effects.
 
-I have created to tables in Airtable and pointed the our class from for one table and our functional component to the other. It is important to note that we will be using (axios)[https://www.npmjs.com/package/axios] and creating a airtableAPI.js to code the logic of pushing the data to Airtable
+I have created to tables in Airtable and pointed the our class from for one table and our functional component to the other. It is important to note that we will be using [axios](https://www.npmjs.com/package/axios) and creating a airtableAPI.js to code the logic of pushing the data to Airtable
 
 ```js 
 import axios from "axios";
