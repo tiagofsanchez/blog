@@ -51,7 +51,7 @@ Loom enables you to record a video that could be a product demo or a query aroun
 
 ## One more thing 
 
-With a growing concern on data privacy, it is very interesting to see companies like [Mattermost](https://crushingwfh.com/communication/mattermost) designing a messaging solution where the user, in this case the company that uses them, will need to set up the database form their new messaging service. As a result them totally own their data. 
+With a growing concern on data privacy, it is very interesting to see companies like [Mattermost](https://crushingwfh.com/communication/mattermost) designing a messaging solution where the user, in this case the company that uses them, will need to set up the database for their new messaging service. As a result they totally own their data. 
 
 These tools are really trying to transform the way we work together in a more efficient way, taking away the distraction created by communication tools that are driven by engagement metrics and not output.
 
