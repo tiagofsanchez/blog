@@ -57,7 +57,7 @@ These tools are really trying to transform the way we work together in a more ef
 
 # Mapping the future of work
 
-A month ago, I created a small directory of startups [curshingwfh](https://crushingwfh.com/) with the intent of helping anyone that is working from home. In my mind, this simple web app would be the cheat- sheet for everyone that is working from home. As such, it will need to have all possible tools and, as off now, you will find tools that could help you with: 
+A month ago, I created a small directory of startups [crushingwfh](https://crushingwfh.com/) with the intent of helping anyone that is working from home. In my mind, this simple web app would be the cheat- sheet for everyone that is working from home. As such, it will need to have all possible tools and, as off now, you will find tools that could help you with: 
 
 Coding, or better, learning to code;
 - Collaboration;
