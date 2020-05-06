@@ -49,7 +49,7 @@ Always on and connected shouldn’t be the norm, asynchronous is the way forward
 
 Loom enables you to record a video that could be a product demo or a query around something. Say goodbye to lengthy emails, I guess anyone can be a corporate youtuber now. With Threads you are never late for that meeting, teams work on projects, in threads, whenever they have time to do so and you will never lose track of what was decided as decisions are highlighted and documented for posterity.
 
-## One more thing 
+## ☝️ One more thing 
 
 With a growing concern on data privacy, it is very interesting to see companies like [Mattermost](https://crushingwfh.com/communication/mattermost) designing a messaging solution where the user, in this case the company that uses them, will need to set up the database for their new messaging service. As a result they totally own their data. 
 
