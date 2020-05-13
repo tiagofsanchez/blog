@@ -14,7 +14,7 @@ The ability to collaborate at scale in a dynamic way is what sets us apart from 
 
 Now, more than ever, we need to do a better job at collaborating with one another - our office has invaded our home, school seems to have settled into our living room and there is a very blurry line between family and work time. As time passes and lockdown continues, that line seems to be disappearing. How can we regain it? 
 
-How can we be more collaborative, yet more effective without the need to be constantly communicating? (previous post on the challenges of communication). The world is living the single biggest experiment on the working from home front and I reckon this will forever change the way we collaborate. The big question remains, are we going to be able to do that in a smart way?
+How can we be more collaborative, yet more effective without the need to be constantly [communicating](https://www.tiagofsanchez.com/the-future-of-work-needs-a-new-communication-tool)? The world is living the single biggest experiment on the working from home front and I reckon this will forever change the way we collaborate. The big question remains, are we going to be able to do that in a smart way?
 
 # Collaboration
 
