@@ -40,7 +40,7 @@ Fortunately, companies like [Bloomfire](https://crushingwfh.com/collaboration/bl
 
 # 🔢 Spreadsheets reinvented  
 
-them. We can’t live without them, especially in today’s world, and we would love to be able to do more with them… way more! But it seems that the traditional tools aren’t able to deliver on that. Why can’t I share that amazing graph, or analysis, on a browser? Sending attachments seems a thing of the past, why can’t I just embed my document somewhere and send it? How quickly can my excel be turned in a gantt diagram or a proper PMO? Traditional spreadsheets leave a lot to be desired. 
+The world is run by spreadsheets and I think we all have this love-hate relationship with them. We can’t live without them, especially in today’s world, and we would love to be able to do more with them… way more! But it seems that the traditional tools aren’t able to deliver on that. Why can’t I share that amazing graph, or analysis, on a browser? Sending attachments seems a thing of the past, why can’t I just embed my document somewhere and send it? How quickly can my excel be turned in a gantt diagram or a proper PMO? Traditional spreadsheets leave a lot to be desired. 
 
 With so many pain points to solve for it is fantastic to see a lot of new tools that are adding value to the space, [Airtable](https://crushingwfh.com/collaboration/airtable) and [Grid](https://crushingwfh.com/collaboration/grid) are great examples. If your work requires building graphs and sharing them with colleagues or clients, Grid has you covered. In a very simple way Grid will turn your spreadsheet into a web report, dashboard or interactive application. 
 
