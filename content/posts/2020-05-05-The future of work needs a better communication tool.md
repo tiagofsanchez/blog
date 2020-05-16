@@ -26,7 +26,7 @@ Unfortunately this will not go away and if this working from home situation is p
 
 To better understand the future of communication I have tried to map some of the tools available out there, you can check them [here](https://crushingwfh.com/communication/), and I was very pleased to learn that the future of communication can and will be better than it is today. 
 
-## 📥 Email done the right way
+# 📥 Email done the right way
 
 Email can be time consuming and non value added. We are always receiving endless emails, that little red dot never seems to go away and it seems that we will never get a zero email inbox figure. 
 
@@ -34,7 +34,7 @@ There are companies that will challenge and change that: [Superhuman](https://cr
 
 Superhuman gives you relevant information about the sender, from LinkedIn to twitter, they claim “they got you cover”. They have a very nice and sleek design with great features, from unsent option to filtering capabilities that are powered by ML. Front enables you to easily integrate with your CRM, and is focused in automating your responses in order to manage, track and generate SLA’s from your team. 
 
-## 📌 All your communications in one place
+# 📌 All your communications in one place
 
 Nowadays teams use several different tools and everyone seems to be juggling from app to app in a frantic messaging ping pong. Wouldn’t it be great to have a tool that would be able to centralize all your favorite communication tools? Look no further... 
  
@@ -43,13 +43,13 @@ Centralizing all your communications tools: [Nuffsaid](https://crushingwfh.com/c
 Quill enables you to invite anyone with just their phone number. You can create a channel where you invite your partners or customers while allowing your team to exchange notes, thoughts and tasks with them. Nuffsaid enables you to search through all your messages in one place. Can’t remember where that very important conversation took place? No worries, you can search it now.
 
 
-## 🔌  Be connected, asynchronously
+# 🔌  Be connected, asynchronously
 
 Always on and connected shouldn’t be the norm, asynchronous is the way forward: [Threads](https://crushingwfh.com/communication/threads) and [Loom](https://crushingwfh.com/communication/loom) are good examples of this trend.
 
 Loom enables you to record a video that could be a product demo or a query around something. Say goodbye to lengthy emails, I guess anyone can be a corporate youtuber now. With Threads you are never late for that meeting, teams work on projects, in threads, whenever they have time to do so and you will never lose track of what was decided as decisions are highlighted and documented for posterity.
 
-## ☝️ One more thing 
+# ☝️ One more thing 
 
 With a growing concern on data privacy, it is very interesting to see companies like [Mattermost](https://crushingwfh.com/communication/mattermost) designing a messaging solution where the user, in this case the company that uses them, will need to set up the database for their new messaging service. As a result they totally own their data. 
 
