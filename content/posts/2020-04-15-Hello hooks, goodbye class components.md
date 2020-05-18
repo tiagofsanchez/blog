@@ -308,7 +308,7 @@ We will have to start with adding `width` to the state of our component and add 
 
 Here we only need to create a new "state" slice, in this case width by using our `useState` like we did before. However we will now introduce the use of `useEffect`, the hook that could be seen as the substitute for `componentDidMount`, `componentDidUpdate` and `componentWillUnmount`, but is not quite the same thing. 
 
-If this is the first time seeing this, I would suggest that you go through react (documentation)[https://reactjs.org/docs/hooks-effect.html] about `useEffect` or, if you are brave enough, check Dan Abramov post; (A complete guide to useEffect)[https://overreacted.io/a-complete-guide-to-useeffect/]. 
+If this is the first time seeing this, I would suggest that you go through react [documentation](https://reactjs.org/docs/hooks-effect.html) about `useEffect` or, if you are brave enough, check Dan Abramov post; [A complete guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/). 
 
 > useEffect(fn, [])
 
