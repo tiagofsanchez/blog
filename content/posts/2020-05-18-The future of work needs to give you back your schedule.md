@@ -20,7 +20,7 @@ How can you regain control of your time so you can stay focused on the task and 
 
 Meeting invites creep into diaries across the globe, they are the heartbeat of white collar employees as they share progress, notes and try to get stuff done. While no doubt important, they fracture the day into tiny pieces and make everyone hostage to  other people’s agendas. Individually we all have less time for “deep work” 
 
-“Professional activities performed in a state of distraction-free concentration that push your cognitive capabilities to their limit. These efforts create new value, improve your skill, and are hard to replicate.”
+>Professional activities performed in a state of distraction-free concentration that push your cognitive capabilities to their limit. These efforts create new value, improve your skill, and are hard to replicate.
 By Carl Newport    
 
 According to Carl Newport, we need distraction-free concentration to push our capabilities to their limit and create value. Any type of organization will rejoice with the hypotheses of more value creation. Yet, the opposite tends to happen as we jump from meeting to meeting ad infinitum.  
