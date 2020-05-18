@@ -31,19 +31,19 @@ To better understand how you can regain your schedule back, I have mapped some o
 
 Deep work can’t be done in 30-minute sprints while you swing from one call to another. We need more time to produce something meaningful and relevant. What if you can “shelter” yourself from the incoming slack messages, meeting invites and emails? Or even better, what if AI could rearrange your schedule so you can regain big chunks of your day to practice “deep work”?
  
-Focused around the creed that “deep work” should be prioritized, Memory built Dewo, to enable you to maximize your state of flow. Dewo blocks notifications automatically, reschedules your appointments,and more importantly, tracks your “deep work” progress. With a similar mission, Clockwise promises you a solution to escape the chaos of work, freeing up your time so you can focus on what matters. In short they optimize your calendar so you can claw back more time to develop your craft.
+Focused around the creed that “deep work” should be prioritized, [Memory](https://crushingwfh.com/scheduling/memory) built Dewo, to enable you to maximize your state of flow. Dewo blocks notifications automatically, reschedules your appointments,and more importantly, tracks your “deep work” progress. With a similar mission, [Clockwise](https://crushingwfh.com/scheduling/clockwise) promises you a solution to escape the chaos of work, freeing up your time so you can focus on what matters. In short they optimize your calendar so you can claw back more time to develop your craft.
 
 # 🤢 No more shallow tasks
 
 You wake up fresh, only to learn that all your appointments were shuffled around – your previously pristine schedule is now in complete chaos. You spend an hour or more trying to rearrange things as newly created meetings clash with the ones shuffled overnight. To salvage the day you have to shoot a couple of emails and make a couple of calls. What if this would be done automatically? 
 
-Fortunately, companies like Mixmax, Woven and x.ai – to name a few – can help you organize your schedule. Woven proposes smart templates and scheduling links to help with organizing all your meetings. Mixmax is deeply integrated in your email, understands the context of your conversations, and is able to generate email scheduling sequences in an automated way. x.ai handles the meeting request with your connections and schedules them instantaneously.  
+Fortunately, companies like [Mixmax](https://crushingwfh.com/scheduling/mixmax), [Woven](https://crushingwfh.com/scheduling/woven) and [x.ai](https://crushingwfh.com/scheduling/x.ai) – to name a few – can help you organize your schedule. Woven proposes smart templates and scheduling links to help with organizing all your meetings. Mixmax is deeply integrated in your email, understands the context of your conversations, and is able to generate email scheduling sequences in an automated way. x.ai handles the meeting request with your connections and schedules them instantaneously.  
  
 # 🆘 Get help when in need
 
 You are scaling and growing super fast. You need to focus on execution to continue to expand, but also need time to think about the next strategic move. You have to free yourself from that research piece of work, or you might need someone to reply to that email for you. Sound familiar? What if you had someone who could automate work for, just waiting for your input? Or, if you had a fantastic executive assistant at your disposal without having to pay a full time wage? Too good to be true? 
 
-Invisible runs and automates business processes with a wide range of solutions across both sales and HR operations to help your business grow. Doudle helps you to delegate work that can’t be done by a machine. They offer you high calibre executive assistants, with up to 5 years of experience, to handle complex tasks for you. In short they combine humans and technology to get your tasks done in an efficient way.
+[Invisible](https://crushingwfh.com/scheduling/invisible) runs and automates business processes with a wide range of solutions across both sales and HR operations to help your business grow. [Doudle](https://crushingwfh.com/scheduling/doudle) helps you to delegate work that can’t be done by a machine. They offer you high calibre executive assistants, with up to 5 years of experience, to handle complex tasks for you. In short they combine humans and technology to get your tasks done in an efficient way.
  
 
 # ☝️ One more thing
