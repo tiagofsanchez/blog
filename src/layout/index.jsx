@@ -23,7 +23,7 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription} />
           <html lang="en" />
         </Helmet>
-        <NavMenu menuLinks={config.menuLinks} />
+        <NavMenu menuLinks={config.menuLinks} menuLinksMobile={config.menuLinksMobile}/>
         <div style={{ marginTop: `120px`, marginBottom: `50px` }}>
           {children}
         </div>

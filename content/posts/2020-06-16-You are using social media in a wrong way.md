@@ -7,7 +7,7 @@ tags:
   - digital garden
   - blog
   - social media
-publish: "yes"
+publish: "no"
 ---
 
 I seriously believe that you are using social media in a wrong way.

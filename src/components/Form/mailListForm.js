@@ -123,7 +123,8 @@ class mailListForm extends React.Component {
           boxShadow: `1px 2px 10px rgba(0, 0, 0, 0.5)`,
           borderRadius: `10px`,
           textAlign: `center`,
-          fontSize: `13px`
+          fontSize: `13px`,
+          marginBottom: `90px`
         }}
       >
         {formHeader}

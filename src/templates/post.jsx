@@ -99,7 +99,9 @@ export default class PostTemplate extends React.Component {
           <Section>
             <SmallAvatar />
           </Section>
+              
           <MailListForm formType={"homePage"} />
+
         </div>
       </Layout>
     );
